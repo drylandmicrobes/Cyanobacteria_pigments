@@ -5,11 +5,19 @@ module load sratoolkit
 DAT=lib/ncbi_accessions.csv
 OUT=source/NCBI_SRA
 mkdir -p $OUT
-IFS=,
+N=${SLURM_ARRAY_TASK_ID}
 
-tail -n +2 $DAT | cut -f6 -d, | while read SRA
+if [ ! $N ]; then
+    N=$1
+    if [ ! $N ]; then
+        echo "need to provide a number by --array or cmdline"
+        exit
+    fi
+fi
+IFS=,
+tail -n +2 $DAT | cut -f6 -d, | sed -n ${N}p | while read SRA
 do
-#	URL=$(echo $SRA | perl scripts/sra2url.pl --ftp )
+#	URL=$(echo $SRA | perl scripts/sra2url.pl )
 #	echo "ascp -QT -l 1000m -P33001 -i "$ASPERAKEY" $URL $OUT/"
 	if [ ! -f $OUT/${SRA}_2.fastq.gz ]; then
 		fastq-dump --gzip --split-e -O $OUT $SRA
@@ -23,5 +31,4 @@ do
 				#curl -C- -L -o $OUT/${SRA}_${DIRECTION}.fastq.gz $URL/${SRA}_${DIRECTION}.fastq.gz
 #			fi
 #	done
-	break
 done
