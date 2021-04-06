@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-#SBATCH -p batch,intel -N 1 -n 2 --mem 2gb --time 48:00:00 --out logs/download_sra.log
+#SBATCH -p batch,intel -N 1 -n 2 --mem 2gb --time 48:00:00 --out logs/download_sra.%a.log
 module load aspera
 module load sratoolkit
 DAT=lib/ncbi_accessions.csv
