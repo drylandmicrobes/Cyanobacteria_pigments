@@ -1,0 +1,6 @@
+cluster	kingdom	phylum	class	order	family	genus	species	taxid
+DBSCAN_round3_0	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae	Sphingomonas	Sphingomonas sp. Cra20	1327635
+DBSCAN_round1_1	Bacteria	Cyanobacteria	unclassified	Oscillatoriales	Gomontiellaceae	Crinalium	Crinalium epipsammum	241425
+DBSCAN_round3_1	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	Methylobacteriaceae	Microvirga	unclassified	186650
+DBSCAN_round2_1	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	Hyphomicrobiaceae	Devosia	Devosia submarina	1173082
+unclustered	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	Comamonadaceae	unclassified	Comamonadaceae bacterium	1871071

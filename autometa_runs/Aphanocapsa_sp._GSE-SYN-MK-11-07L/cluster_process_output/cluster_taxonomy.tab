@@ -1,0 +1,3 @@
+cluster	kingdom	phylum	class	order	family	genus	species	taxid
+DBSCAN_round1_1	Bacteria	Proteobacteria	Gammaproteobacteria	Chromatiales	Chromatiaceae	Rheinheimera	Rheinheimera sp. LHK132	2498451
+DBSCAN_round1_0	Bacteria	Cyanobacteria	unclassified	Oscillatoriales	Cyanothecaceae	Cyanothece	Cyanothece sp. PCC 7425	395961

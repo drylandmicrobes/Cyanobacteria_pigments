@@ -1,0 +1,8 @@
+cluster	kingdom	phylum	class	order	family	genus	species	taxid
+DBSCAN_round3_4	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae	Sphingomonas	unclassified	13687
+DBSCAN_round4_28	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae	Sphingomonas	Sphingomonas sp. Ag1	1642949
+DBSCAN_round3_2	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae	Sphingomonas	Sphingomonas dokdonensis	344880
+DBSCAN_round1_0	Bacteria	Cyanobacteria	unclassified	Nostocales	Calotrichaceae	Calothrix	Calothrix sp. PCC 7507	99598
+DBSCAN_round5_0	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae	Sphingomonas	unclassified	13687
+DBSCAN_round2_1	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae	Sphingomonas	unclassified	13687
+DBSCAN_round2_2	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	unclassified	Methylibium	Methylibium sp. Root1272	1736441

@@ -1,0 +1,5 @@
+cluster	kingdom	phylum	class	order	family	genus	species	taxid
+DBSCAN_round1_2	Bacteria	Cyanobacteria	unclassified	Synechococcales	Leptolyngbyaceae	Myxacorys	Myxacorys almedinensis	2651157
+DBSCAN_round1_1	Bacteria	Bacteroidetes	Chitinophagia	Chitinophagales	Chitinophagaceae	Flavisolibacter	Flavisolibacter longurius	2740583
+DBSCAN_round4_0	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	Comamonadaceae	Ramlibacter	Ramlibacter sp. HM2	2780087
+DBSCAN_round5_0	Bacteria	Proteobacteria	Gammaproteobacteria	Xanthomonadales	Xanthomonadaceae	Pseudoxanthomonas	unclassified	83618

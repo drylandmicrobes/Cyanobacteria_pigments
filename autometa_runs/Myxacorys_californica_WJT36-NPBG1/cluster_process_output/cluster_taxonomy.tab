@@ -1,0 +1,8 @@
+cluster	kingdom	phylum	class	order	family	genus	species	taxid
+DBSCAN_round1_3	Bacteria	Gemmatimonadetes	unclassified	unclassified	unclassified	unclassified	uncultured Gemmatimonadetes bacterium	203437
+DBSCAN_round1_1	Bacteria	Acidobacteria	unclassified	unclassified	unclassified	unclassified	Acidobacteria bacterium	1978231
+DBSCAN_round1_0	Bacteria	Actinobacteria	Actinomycetia	Geodermatophilales	Geodermatophilaceae	Blastococcus	unclassified	38501
+unclustered	Bacteria	Proteobacteria	Alphaproteobacteria	unclassified	unclassified	unclassified	Alphaproteobacteria bacterium PA3	2015571
+DBSCAN_round1_4	Bacteria	Cyanobacteria	unclassified	Synechococcales	Leptolyngbyaceae	Myxacorys	Myxacorys almedinensis	2651157
+DBSCAN_round2_0	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Acetobacteraceae	Roseomonas	unclassified	125216
+DBSCAN_round2_1	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	Methylobacteriaceae	Enterovirga	Enterovirga sp. DB1703	2730920

@@ -1,0 +1,5 @@
+cluster	kingdom	phylum	class	order	family	genus	species	taxid
+DBSCAN_round1_2	Bacteria	Cyanobacteria	unclassified	Synechococcales	Synechococcaceae	Synechococcus	unclassified	1129
+DBSCAN_round1_1	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Acetobacteraceae	Roseomonas	unclassified	125216
+DBSCAN_round2_0	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Erythrobacteraceae	Erythrobacter	Erythrobacter ramosus	35811
+DBSCAN_round2_1	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Rhodobacter	Rhodobacter sp. CCP-1	1985673

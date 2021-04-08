@@ -1,0 +1,7 @@
+cluster	kingdom	phylum	class	order	family	genus	species	taxid
+DBSCAN_round1_3	Bacteria	Cyanobacteria	unclassified	Nostocales	Scytonemataceae	Brasilonema	unclassified	383614
+DBSCAN_round1_2	Bacteria	Proteobacteria	Alphaproteobacteria	Caulobacterales	Caulobacteraceae	Brevundimonas	Brevundimonas fluminis	2487274
+DBSCAN_round1_1	Bacteria	Bacteroidetes	Cytophagia	Cytophagales	Cytophagaceae	Spirosoma	Spirosoma sp. BT702	2771354
+unclustered	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	Phyllobacteriaceae	Phyllobacterium	Phyllobacterium phragmitis	2670329
+DBSCAN_round2_0	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	Phyllobacteriaceae	Mesorhizobium	Mesorhizobium hungaricum	1566387
+DBSCAN_round2_1	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	Bradyrhizobiaceae	Bradyrhizobium	unclassified	374

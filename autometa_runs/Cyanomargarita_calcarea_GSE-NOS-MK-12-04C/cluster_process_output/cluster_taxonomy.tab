@@ -1,0 +1,8 @@
+cluster	kingdom	phylum	class	order	family	genus	species	taxid
+DBSCAN_round1_3	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	Rhizobiaceae	Rhizobium	Rhizobium sp. TH135	2067451
+DBSCAN_round1_2	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	Bradyrhizobiaceae	Bosea	unclassified	85413
+DBSCAN_round1_1	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Erythrobacteraceae	Porphyrobacter	Porphyrobacter sp. AAP60	1523423
+DBSCAN_round1_0	Bacteria	Proteobacteria	Alphaproteobacteria	Caulobacterales	Caulobacteraceae	Brevundimonas	Brevundimonas sp. GRTSA-9	2800818
+unclustered	Bacteria	Cyanobacteria	unclassified	Nostocales	Calotrichaceae	Calothrix	Calothrix sp. PCC 7103	32057
+DBSCAN_round1_5	Bacteria	Cyanobacteria	unclassified	Nostocales	Calotrichaceae	Calothrix	unclassified	1186
+DBSCAN_round1_4	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Acetobacteraceae	Roseomonas	unclassified	125216

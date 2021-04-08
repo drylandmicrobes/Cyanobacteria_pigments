@@ -1,0 +1,7 @@
+cluster	kingdom	phylum	class	order	family	genus	species	taxid
+DBSCAN_round1_3	Bacteria	Cyanobacteria	unclassified	Nostocales	Calotrichaceae	Calothrix	unclassified	1186
+DBSCAN_round1_2	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae	unclassified	unclassified	41297
+DBSCAN_round1_1	Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Pseudomonadaceae	Pseudomonas	Pseudomonas chengduensis	489632
+DBSCAN_round1_0	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	Hyphomicrobiaceae	Devosia	Devosia submarina	1173082
+DBSCAN_round1_5	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae	Sphingopyxis	Sphingopyxis sp. L1A2A	2502247
+DBSCAN_round1_4	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	Rhizobiaceae	Rhizobium	unclassified	379

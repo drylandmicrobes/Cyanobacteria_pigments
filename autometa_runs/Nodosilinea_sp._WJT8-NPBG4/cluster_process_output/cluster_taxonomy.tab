@@ -1,0 +1,10 @@
+cluster	kingdom	phylum	class	order	family	genus	species	taxid
+DBSCAN_round34_0	Bacteria	Actinobacteria	Actinomycetia	Micrococcales	Microbacteriaceae	Microbacterium	Microbacterium sp. SA39	1263625
+DBSCAN_round41_0	Bacteria	Proteobacteria	Alphaproteobacteria	Caulobacterales	Caulobacteraceae	Brevundimonas	Brevundimonas alba	74314
+DBSCAN_round23_0	Bacteria	Proteobacteria	Alphaproteobacteria	Caulobacterales	Caulobacteraceae	Brevundimonas	Brevundimonas sp.	1871086
+DBSCAN_round50_2	Bacteria	Proteobacteria	Alphaproteobacteria	Caulobacterales	Caulobacteraceae	Brevundimonas	unclassified	41275
+DBSCAN_round50_1	Bacteria	Proteobacteria	Alphaproteobacteria	Caulobacterales	Caulobacteraceae	Brevundimonas	Brevundimonas sp. Root1423	1736462
+DBSCAN_round1_1	Bacteria	Cyanobacteria	unclassified	Synechococcales	Prochlorotrichaceae	Nodosilinea	Nodosilinea sp. FACHB-131	2692832
+unclustered	Bacteria	Actinobacteria	Actinomycetia	Micrococcales	Microbacteriaceae	Microbacterium	Microbacterium sp. K24	2305446
+DBSCAN_round2_1	Bacteria	Actinobacteria	Actinomycetia	Pseudonocardiales	Pseudonocardiaceae	Pseudonocardia	uncultured Pseudonocardia sp.	211455
+DBSCAN_round2_2	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	Comamonadaceae	Variovorax	Variovorax paradoxus	34073

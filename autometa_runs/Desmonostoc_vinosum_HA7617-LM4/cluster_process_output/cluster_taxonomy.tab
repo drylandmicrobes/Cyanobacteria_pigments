@@ -1,0 +1,7 @@
+cluster	kingdom	phylum	class	order	family	genus	species	taxid
+DBSCAN_round3_1	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	Phyllobacteriaceae	Mesorhizobium	Mesorhizobium hungaricum	1566387
+DBSCAN_round3_0	Bacteria	Proteobacteria	Alphaproteobacteria	Caulobacterales	Caulobacteraceae	Brevundimonas	Brevundimonas bacteroides	74311
+DBSCAN_round3_3	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	Bradyrhizobiaceae	Bradyrhizobium	unclassified	374
+DBSCAN_round1_1	Bacteria	Cyanobacteria	unclassified	Nostocales	Nostocaceae	Nostoc	unclassified	1177
+unclustered	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	Methylobacteriaceae	Methylobacterium	unclassified	407
+DBSCAN_round2_1	Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	unclassified	Rubrivivax	Rubrivivax sp. A210	2772301
