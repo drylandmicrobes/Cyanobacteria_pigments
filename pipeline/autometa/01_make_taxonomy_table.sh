@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-#SBATCH -p batch --mem 32gb -N 1 -n 24 --out logs/autometa_taxonomy.%a.%A.log
+#SBATCH -p batch,intel --mem 32gb -N 1 -n 24 --out logs/autometa_taxonomy.%a.%A.log
 
 # see module load below
 
@@ -29,19 +29,15 @@ tail -n +2 $DAT | sed -n ${N}p | while read SPECIES STRAIN ACCESSION ASMNAME BIO
 do
     OUTNAME=$(echo "${SPECIES}_$STRAIN" | perl -p -e 's/\s+$//; s/[\s\/\;]/_/g')
     echo $OUTNAME
-    BED=bed
-    OUT=coverage
     GENOMEFILE=genomes/${OUTNAME}.dna.fasta
-    BAM=$OUTNAME.remap.bam
-    COV=$OUTNAME.cov
-    COVTAB=$OUT/$OUTNAME.coverage.tab
-
+    COVTAB=coverage/$OUTNAME.coverage.tab
+    AUTOMETAOUT=autometa_runs
+    mkdir -p $AUTOMETAOUT
     if [ ! -f $COVTAB ]; then
 	bash pipeline/autometa/00_make_cov.sh $N
     fi
-    if [ ! -d $OUTNAME.autometa ]; then
+    if [ ! -d $AUTOMETAOUT/$OUTNAME ]; then
 	module load autometa/1.0.2
-	source activate autometa
-	make_taxonomy_table.py -a $GENOMEFILE -p 24 -o $OUTNAME.autometa --cov_table $COVTAB
+	make_taxonomy_table.py -a $GENOMEFILE -p $CPU -o $AUTOMETAOUT/$OUTNAME --cov_table $COVTAB
     fi
 done
