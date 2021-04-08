@@ -36,6 +36,7 @@ do
     BAM=/scratch/$OUTNAME.remap.bam
     COV=$OUTNAME.cov
     COVTAB=$OUT/$OUTNAME.coverage.tab
+    CONTIGCOV=$OUT/$OUTNAME.contig_cov_table.tab
     FWD=source/NCBI_SRA/${SRA}_1.fastq.gz
     REV=source/NCBI_SRA/${SRA}_2.fastq.gz
     if [ ! -f $COVTAB ]; then
@@ -54,7 +55,7 @@ do
 	source activate autometa
 
 	contig_coverage_from_bedtools.pl $OUT/$OUTNAME.genome_cov.bed > $COVTAB
-	
+	make_contig_table.py -a $GENOMEFILE -c $COVTAB -o $CONTIGCOV
 	rm -f $SAM $BAM $BAM.bai
     fi
 done
