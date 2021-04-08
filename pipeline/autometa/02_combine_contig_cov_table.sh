@@ -32,6 +32,6 @@ do
     COVTAB=$OUT/$OUTNAME.coverage.tab
     CONTIGCOV=$OUT/$OUTNAME.contig_cov_table.tab
     if [ ! -f $CONTIGCOV ]; then
-	make_contig_table.py -a $BASE -c $COVTAB -o $$CONTIGCOV
+	make_contig_table.py -a $GENOMEFILE -c $COVTAB -o $CONTIGCOV
     fi
 done
