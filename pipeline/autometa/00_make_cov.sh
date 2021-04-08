@@ -1,6 +1,7 @@
 #!/usr/bin/bash
-#SBATCH -N 1 -n 16 -p batch --mem 16gb --out logs/make_cov.%a.log
+#SBATCH -N 1 -n 24 --mem 64gb --out logs/make_cov.%a.log -p short
 
+hostname # for debugging and cleanup
 module load bwa
 module load samtools/1.11
 module load bedtools
@@ -31,6 +32,7 @@ do
     mkdir -p $OUT
     GENOMEFILE=genomes/${OUTNAME}.dna.fasta
     # small speedup would be to write this to /scratch instead of the current directory
+    SAM=/scratch/$OUTNAME.remap.sam
     BAM=/scratch/$OUTNAME.remap.bam
     COV=$OUTNAME.cov
     COVTAB=$OUT/$OUTNAME.coverage.tab
@@ -40,19 +42,19 @@ do
 	if [ ! -f $GENOMEFILE.bwt ]; then
 	    bwa index $GENOMEFILE
 	fi
-	bwa mem -t $CPU $GENOMEFILE $FWD $REV | samtools sort --threads $CPU -T /scratch -O bam -o $BAM -
+	bwa mem -t $CPU $GENOMEFILE $FWD $REV > $SAM
+	samtools sort --threads $CPU -T /scratch -O bam -o $BAM $SAM
 	samtools index $BAM
 	
 	# can replace this also with samtools faidx and a cut cmd
 	#fasta_length_table.pl $ASSEMBLY > $BASE.genome.lengths
 	genomeCoverageBed -ibam $BAM  > $OUT/$OUTNAME.genome_cov.bed
 
-
 	module load autometa/1.0.2
 	source activate autometa
 
 	contig_coverage_from_bedtools.pl $OUT/$OUTNAME.genome_cov.bed > $COVTAB
 	
-	rm -f $BAM $BAM.bai
+	rm -f $SAM $BAM $BAM.bai
     fi
 done
