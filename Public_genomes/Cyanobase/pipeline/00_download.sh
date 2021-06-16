@@ -37,6 +37,7 @@ module load aspera
 DAT=(lib/Cyanobase_genomes.ncbi.csv)
 OUT=../source/NCBI_ASM
 STAGE=../genomes
+PEP=../pep
 mkdir -p $STAGE $OUT
 IFS=,
 for file in ${DAT[@]};
@@ -57,6 +58,9 @@ do
     fi
     if [ ! -s $STAGE/${OUTNAME}.dna.fasta ]; then
       pigz -dc $OUT/${ACCESSION}_${ASMNAME}/${ACCESSION}_${ASMNAME}_genomic.fna.gz > $STAGE/${OUTNAME}.dna.fasta
+    fi
+    if [ ! -s $PEP/${OUTNAME}.pep.fasta ]; then
+	    pigz -dc $OUT/${ACCESSION}_${ASMNAME}/${ACCESSION}_${ASMNAME}_translated_cds.faa.gz | perl -p -e 's/>(\S+.*)\s+\[locus_tag=([^\]]+)\]/>$2 $1/' > $PEP/${OUTNAME}.pep.fasta
     fi
   done
 done
