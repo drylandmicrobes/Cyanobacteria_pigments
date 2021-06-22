@@ -1,0 +1,132 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=38;
+	taxlabels
+	'A9601_06891_Prochlorococcus_marinus_str._AS9601'
+	'A9601_11691_Prochlorococcus_marinus_str._AS9601'
+	AM1_6075_Acaryochloris_marina_MBIC11017
+	Cyagr_3297_Cyanobium_gracile_PCC_6307
+	'EW14_0680_Prochlorococcus_sp._MIT_0604_MIT_0604'
+	'EW14_1203_Prochlorococcus_sp._MIT_0604_MIT_0604'
+	'EW15_0738_Prochlorococcus_sp._MIT_0801_MIT_0801'
+	'EW15_1582_Prochlorococcus_sp._MIT_0801_MIT_0801'
+	'GEI7407_3010_Geitlerinema_sp._PCC_7407_PCC_7407'
+	KME02_09020_Aphanothece_saxicola_GSE-SYN-MK-01-06B
+	KME12_17150_Trichocoleus_desertorum_ATA4-8-CV12
+	KME14_19155_Tildeniella_torsiva_UHER_1998_13D
+	'KME47_16960_Nodosilinea_sp._WJT8-NPBG4'
+	'KR100_05840_Synechococcus_sp._KORDI-100_KORDI-100'
+	'KR49_04885_Synechococcus_sp._KORDI-49_KORDI-49'
+	'KR52_06575_Synechococcus_sp._KORDI-52_KORDI-52'
+	'M744_06080_Synechococcus_sp._UTEX_2973_UTEX_2973'
+	'NATL1_06951_Prochlorococcus_marinus_str._NATL1A'
+	'NATL1_15221_Prochlorococcus_marinus_str._NATL1A'
+	'P9215_07161_Prochlorococcus_marinus_str._MIT_9215'
+	'P9215_11991_Prochlorococcus_marinus_str._MIT_9215'
+	'P9301_06601_Prochlorococcus_marinus_str._MIT_9301'
+	'P9301_11701_Prochlorococcus_marinus_str._MIT_9301'
+	'P9515_06991_Prochlorococcus_marinus_str._MIT_9515'
+	'P9515_11541_Prochlorococcus_marinus_str._MIT_9515'
+	'PMN2A_0073_Prochlorococcus_marinus_str._NATL2A'
+	'PMN2A_0688_Prochlorococcus_marinus_str._NATL2A'
+	'PMT9312_0633_Prochlorococcus_marinus_str._MIT_9312'
+	'PMT9312_1075_Prochlorococcus_marinus_str._MIT_9312'
+	'Pro_0790_Prochlorococcus_marinus_subsp._marinus_str._CCMP1375_CCMP1375__SS120'
+	'Pro_1136_Prochlorococcus_marinus_subsp._marinus_str._CCMP1375_CCMP1375__SS120'
+	'SynWH8103_00830_Synechococcus_sp._WH_8103_WH_8103'
+	'Syncc8109_2036_Synechococcus_sp._WH_8109_WH_8109'
+	'Syncc9605_1941_Synechococcus_sp._CC9605_CC9605'
+	'Syncc9902_0724_Synechococcus_sp._CC9902_CC9902'
+	'Synpcc7942_2062_Synechococcus_elongatus_=_FACHB-805_PCC_7942'
+	syc2031_d_Synechococcus_elongatus_PCC_6301
+	'sync_0974_Synechococcus_sp._CC9311_CC9311'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] ((('P9515_06991_Prochlorococcus_marinus_str._MIT_9515':0.04878,('PMT9312_0633_Prochlorococcus_marinus_str._MIT_9312':0.02119,('A9601_06891_Prochlorococcus_marinus_str._AS9601':5.5E-4,('P9215_07161_Prochlorococcus_marinus_str._MIT_9215':0.01953,('EW14_0680_Prochlorococcus_sp._MIT_0604_MIT_0604':0.00971,'P9301_06601_Prochlorococcus_marinus_str._MIT_9301':0.00239)[&label=0.0]:5.4E-4)[&label=0.497]:5.4E-4)[&label=0.972]:0.02562)[&label=0.482]:0.04326)[&label=1.0]:0.41355,('Pro_0790_Prochlorococcus_marinus_subsp._marinus_str._CCMP1375_CCMP1375__SS120':0.34276,('EW15_0738_Prochlorococcus_sp._MIT_0801_MIT_0801':0.0151,('PMN2A_0073_Prochlorococcus_marinus_str._NATL2A':0.00716,'NATL1_06951_Prochlorococcus_marinus_str._NATL1A':0.00706)[&label=0.334]:0.0063)[&label=1.0]:0.26138)[&label=0.453]:0.06245)[&label=1.0]:0.32658,((('Synpcc7942_2062_Synechococcus_elongatus_=_FACHB-805_PCC_7942':0.0,'M744_06080_Synechococcus_sp._UTEX_2973_UTEX_2973':0.0):5.5E-4,syc2031_d_Synechococcus_elongatus_PCC_6301:0.00248)[&label=1.0]:0.28457,(AM1_6075_Acaryochloris_marina_MBIC11017:0.3762,(KME12_17150_Trichocoleus_desertorum_ATA4-8-CV12:0.46325,('GEI7407_3010_Geitlerinema_sp._PCC_7407_PCC_7407':0.17638,('KME47_16960_Nodosilinea_sp._WJT8-NPBG4':0.08833,KME14_19155_Tildeniella_torsiva_UHER_1998_13D:0.03434)[&label=1.0]:0.39321)[&label=0.885]:0.07187)[&label=0.93]:0.07378)[&label=0.852]:0.06893)[&label=0.992]:0.15141,((KME02_09020_Aphanothece_saxicola_GSE-SYN-MK-01-06B:0.0695,Cyagr_3297_Cyanobium_gracile_PCC_6307:0.07862)[&label=1.0]:0.28309,((('sync_0974_Synechococcus_sp._CC9311_CC9311':0.11286,'Syncc9902_0724_Synechococcus_sp._CC9902_CC9902':0.10356)[&label=0.999]:0.13029,('KR49_04885_Synechococcus_sp._KORDI-49_KORDI-49':0.16829,(('KR100_05840_Synechococcus_sp._KORDI-100_KORDI-100':0.06638,'KR52_06575_Synechococcus_sp._KORDI-52_KORDI-52':0.06502)[&label=0.776]:0.01021,('SynWH8103_00830_Synechococcus_sp._WH_8103_WH_8103':0.07756,('Syncc9605_1941_Synechococcus_sp._CC9605_CC9605':0.04313,'Syncc8109_2036_Synechococcus_sp._WH_8109_WH_8109':0.05323)[&label=0.965]:0.02705)[&label=0.65]:0.01033)[&label=0.998]:0.09373)[&label=0.937]:0.07959)[&label=0.972]:0.11151,('Pro_1136_Prochlorococcus_marinus_subsp._marinus_str._CCMP1375_CCMP1375__SS120':0.24765,(('P9515_11541_Prochlorococcus_marinus_str._MIT_9515':0.07237,('A9601_11691_Prochlorococcus_marinus_str._AS9601':0.02343,('PMT9312_1075_Prochlorococcus_marinus_str._MIT_9312':0.04271,('EW14_1203_Prochlorococcus_sp._MIT_0604_MIT_0604':0.01166,('P9301_11701_Prochlorococcus_marinus_str._MIT_9301':0.0209,'P9215_11991_Prochlorococcus_marinus_str._MIT_9215':0.00262)[&label=0.892]:0.00962)[&label=0.914]:0.02)[&label=0.31]:0.01766)[&label=0.989]:0.09485)[&label=1.0]:0.42872,('EW15_1582_Prochlorococcus_sp._MIT_0801_MIT_0801':0.0142,('NATL1_15221_Prochlorococcus_marinus_str._NATL1A':0.0071,'PMN2A_0688_Prochlorococcus_marinus_str._NATL2A':0.00272)[&label=0.967]:0.0426)[&label=1.0]:0.2876)[&label=0.827]:0.09025)[&label=1.0]:0.38398)[&label=0.999]:0.20558)[&label=0.603]:0.08022);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=3.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=274;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="label";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShape.colourAttribute=null;
+	set nodeShape.isShown=false;
+	set nodeShape.minSize=10.0;
+	set nodeShape.scaleType=Width;
+	set nodeShape.shapeType=Circle;
+	set nodeShape.size=4.0;
+	set nodeShape.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=13;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="Midpoint";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
