@@ -1,1 +1,106 @@
-(KME06_13940_Kastovskya_adunca_ATA6-11-RM4:0.19270,Sta7437_1317_Stanieria_cyanosphaera_PCC_7437:0.17606,(PCC7418_3417_Halothece_sp._PCC_7418_PCC_7418:0.31033,((KR100_14775_Synechococcus_sp._KORDI-100_KORDI-100:0.25732,(PMN2A_1502_Prochlorococcus_marinus_str._NATL2A:0.03014,(NATL1_02081_Prochlorococcus_marinus_str._NATL1A:0.03791,EW15_0223_Prochlorococcus_sp._MIT_0801_MIT_0801:0.02488)0.877:0.03808)1.000:0.27324)1.000:0.27773,(CYB_2340_Synechococcus_sp._JA-2-3Ba2-13_JA-2-3Ba2-13:0.28896,(KME04_00630_Pleurocapsa_minor_GSE-CHR-MK-17-07R:1.38976,(Cyan7425_2884_Cyanothece_sp._PCC_7425_PCC_7425:0.75213,(GKIL_1827_Gloeobacter_kilaueensis_JS1:0.32519,Npun_F3165_Nostoc_punctiforme_PCC_73102_ATCC_29133__PCC_73102:0.33604)0.902:0.28856)1.000:1.09851)0.996:0.73952)0.919:0.17769)0.960:0.10427)0.734:0.04830);
+#NEXUS
+begin taxa;
+	dimensions ntax=12;
+	taxlabels
+	'CYB_2340_Synechococcus_sp._JA-2-3Ba2-13_JA-2-3Ba2-13'
+	'Cyan7425_2884_Cyanothece_sp._PCC_7425_PCC_7425'
+	'EW15_0223_Prochlorococcus_sp._MIT_0801_MIT_0801'
+	GKIL_1827_Gloeobacter_kilaueensis_JS1
+	KME04_00630_Pleurocapsa_minor_GSE-CHR-MK-17-07R
+	KME06_13940_Kastovskya_adunca_ATA6-11-RM4
+	'KR100_14775_Synechococcus_sp._KORDI-100_KORDI-100'
+	'NATL1_02081_Prochlorococcus_marinus_str._NATL1A'
+	Npun_F3165_Nostoc_punctiforme_PCC_73102_ATCC_29133__PCC_73102
+	'PCC7418_3417_Halothece_sp._PCC_7418_PCC_7418'
+	'PMN2A_1502_Prochlorococcus_marinus_str._NATL2A'
+	Sta7437_1317_Stanieria_cyanosphaera_PCC_7437
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (KME06_13940_Kastovskya_adunca_ATA6-11-RM4:0.1927,Sta7437_1317_Stanieria_cyanosphaera_PCC_7437:0.17606,('PCC7418_3417_Halothece_sp._PCC_7418_PCC_7418':0.31033,(('KR100_14775_Synechococcus_sp._KORDI-100_KORDI-100':0.25732,('PMN2A_1502_Prochlorococcus_marinus_str._NATL2A':0.03014,('NATL1_02081_Prochlorococcus_marinus_str._NATL1A':0.03791,'EW15_0223_Prochlorococcus_sp._MIT_0801_MIT_0801':0.02488)[&label=0.877]:0.03808)[&label=1.0]:0.27324)[&label=1.0]:0.27773,('CYB_2340_Synechococcus_sp._JA-2-3Ba2-13_JA-2-3Ba2-13':0.28896,(KME04_00630_Pleurocapsa_minor_GSE-CHR-MK-17-07R:1.38976,('Cyan7425_2884_Cyanothece_sp._PCC_7425_PCC_7425':0.75213,(GKIL_1827_Gloeobacter_kilaueensis_JS1:0.32519,Npun_F3165_Nostoc_punctiforme_PCC_73102_ATCC_29133__PCC_73102:0.33604)[&label=0.902]:0.28856)[&label=1.0]:1.09851)[&label=0.996]:0.73952)[&label=0.919]:0.17769)[&label=0.96]:0.10427)[&label=0.734]:0.0483);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=3.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="label";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShape.colourAttribute=null;
+	set nodeShape.isShown=false;
+	set nodeShape.minSize=10.0;
+	set nodeShape.scaleType=Width;
+	set nodeShape.shapeType=Circle;
+	set nodeShape.size=4.0;
+	set nodeShape.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=13;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="Midpoint";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

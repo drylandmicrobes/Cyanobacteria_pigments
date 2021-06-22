@@ -1,1 +1,154 @@
-(KME64_40600_Scytonematopsis_contorta_HA4267-MV1:0.15243,(KME52_29725_Desmonostoc_geniculatum_HA4340-LM1:0.15239,IJ00_24465_Calothrix_sp._336_3_336_3:0.25015)0.590:0.03517,((KME46_19145_Brasilonema_angustatum_HA4187-MV1:0.01554,KME49_27245_Brasilonema_octagenarum_HA4186-MV1:0.01872)1.000:0.12998,(((((((KME09_09030_Pleurocapsa_minor_HA4230-MV1:0.42189,(((KME33_17770_Aetokthonos_hydrillicola_B3-Florida:0.57638,Ple7327_0252_Pleurocapsa_sp._PCC_7327:0.70887)0.920:0.21073,(Riv7116_4391_Rivularia_sp._PCC_7116_PCC_7116:0.92902,(KME09_16610_Pleurocapsa_minor_HA4230-MV1:2.18757,((KME49_19635_Brasilonema_octagenarum_HA4186-MV1:0.15589,ANA_C11715_Anabaena_sp._90_90:0.10175)1.000:1.72146,((Pse7367_2245_Pseudanabaena_sp._PCC_7367_PCC_7367:0.84732,Cyan7425_0365_Cyanothece_sp._PCC_7425_PCC_7425:1.28503)0.979:0.65570,((KME40_08995_Komarekiella_atlantica_HA4396-MV6:0.46742,KME64_29640_Scytonematopsis_contorta_HA4267-MV1:0.42047)0.999:1.61249,((SYNGTS_0425_Synechocystis_sp._PCC_6803_GT-S:0.0,AOY38_02195_Synechocystis_sp._PCC_6803_PCC_6803_substr._GT-G:0.0,SYNGTI_0425_Synechocystis_sp._PCC_6803_substr._GT-I_:0.0,SYNPCCN_0425_Synechocystis_sp._PCC_6803_substr._PCC-N_:0.0,SYNPCCP_0425_Synechocystis_sp._PCC_6803_substr._PCC-P_:0.0):0.65402,(Npun_R4688_Nostoc_punctiforme_PCC_73102_ATCC_29133__PCC_73102:0.34798,((Cri9333_2215_Crinalium_epipsammum_PCC_9333:0.26102,KME17_02120_Cyanosarcina_radialis_HA8281-LM2:0.26490)0.849:0.05741,((KME22_18875_Hassallia_sp._WJT32-NPBG1:0.16400,Riv7116_5957_Rivularia_sp._PCC_7116_PCC_7116:0.23662)0.504:0.05810,KME29_23950_Calothrix_sp._FI2-JRJ7:0.32376)0.834:0.04548)0.963:0.20023)0.842:0.19939)0.999:1.13492)0.209:0.21365)0.844:0.43254)0.781:0.23421)0.695:0.20608)0.562:0.16456)0.949:0.27101,((ANA_C13627_Anabaena_sp._90_90:0.07607,AA650_13830_Anabaena_sp._WA102_WA102:0.11266)1.000:0.60860,(KME35_19865_Aphanocapsa_sp._GSE-SYN-MK-11-07L:0.51464,Syn6312_1119_Synechococcus_sp._PCC_6312_PCC_6312:0.26974)0.998:0.47815)0.928:0.20910)0.998:0.42130)0.893:0.12853,(KME11_06060_Timaviella_obliquedivisa_GSE-PSE-MK23-08B:0.28102,(Synpcc7942_0680_Synechococcus_elongatus_=_FACHB-805_PCC_7942:0.0,syc0849_c_Synechococcus_elongatus_PCC_6301:0.0,M744_13395_Synechococcus_sp._UTEX_2973_UTEX_2973:0.0):0.62257)0.466:0.08558)0.703:0.04396,((PCC7424_0146_Gloeothece_citriformis_PCC_7424:0.19089,Cyan7822_3907_Gloeothece_verrucosa_PCC_7822:0.19862)0.999:0.28041,((KME02_14015_Aphanothece_saxicola_GSE-SYN-MK-01-06B:0.09977,Cyagr_2706_Cyanobium_gracile_PCC_6307:0.13127)1.000:0.41109,((Syn7502_02340_Synechococcus_sp._PCC_7502_PCC_7502:0.21828,((KME35_05345_Aphanocapsa_sp._GSE-SYN-MK-11-07L:0.18273,((Cal6303_1346_Calothrix_sp._PCC_6303:0.15319,(KME20_25850_Kaiparowitsia_implicata_GSE-PSE-MK54-09C:0.14706,(KME47_05515_Nodosilinea_sp._WJT8-NPBG4:0.05590,KME14_01965_Tildeniella_torsiva_UHER_1998_13D:0.07187)1.000:0.16081)0.959:0.06152)0.742:0.01959,MAE_29450_Microcystis_aeruginosa_NIES-843:0.06322)0.353:0.01964)0.630:0.01530,KME17_26450_Cyanosarcina_radialis_HA8281-LM2:0.17186)0.856:0.03234)0.846:0.04665,(cce_0675_Crocosphaera_subtropica_ATCC_51142:0.24488,((SYNGTS_2260_Synechocystis_sp._PCC_6803_GT-S:0.0,AOY38_11745_Synechocystis_sp._PCC_6803_PCC_6803_substr._GT-G:0.0,SYNGTI_2259_Synechocystis_sp._PCC_6803_substr._GT-I_:0.0,SYNPCCN_2258_Synechocystis_sp._PCC_6803_substr._PCC-N_:0.0,SYNPCCP_2258_Synechocystis_sp._PCC_6803_substr._PCC-P_:0.0):0.00054,_Synechocystis_sp._PCC_6803_PCC_6803:0.00055)1.000:0.38454)0.611:0.04352)0.842:0.08481)0.535:0.06582)0.802:0.03458)0.850:0.03536,Sta7437_2267_Stanieria_cyanosphaera_PCC_7437:0.25881)0.745:0.02864,Riv7116_6507_Rivularia_sp._PCC_7116_PCC_7116:0.41138)0.798:0.02482,(KME07_20090_Pegethrix_bostrychoides_GSE-TBD4-15B:0.47905,(KME28_07745_Pelatocladus_maniniholoensis_HA4357-MV3:0.20859,KME16_18805_Scytolyngbya_sp._HA4215-MV1:0.33357)0.739:0.06424)0.850:0.05326)0.912:0.05032,Mic7113_0421_Microcoleus_sp._PCC_7113_PCC_7113:0.16285)0.927:0.05538)0.422:0.03774);
+#NEXUS
+begin taxa;
+	dimensions ntax=60;
+	taxlabels
+	'AA650_13830_Anabaena_sp._WA102_WA102'
+	'ANA_C11715_Anabaena_sp._90_90'
+	'ANA_C13627_Anabaena_sp._90_90'
+	'AOY38_02195_Synechocystis_sp._PCC_6803_PCC_6803_substr._GT-G'
+	'AOY38_11745_Synechocystis_sp._PCC_6803_PCC_6803_substr._GT-G'
+	'Cal6303_1346_Calothrix_sp._PCC_6303'
+	Cri9333_2215_Crinalium_epipsammum_PCC_9333
+	Cyagr_2706_Cyanobium_gracile_PCC_6307
+	'Cyan7425_0365_Cyanothece_sp._PCC_7425_PCC_7425'
+	Cyan7822_3907_Gloeothece_verrucosa_PCC_7822
+	'IJ00_24465_Calothrix_sp._336_3_336_3'
+	KME02_14015_Aphanothece_saxicola_GSE-SYN-MK-01-06B
+	KME07_20090_Pegethrix_bostrychoides_GSE-TBD4-15B
+	KME09_09030_Pleurocapsa_minor_HA4230-MV1
+	KME09_16610_Pleurocapsa_minor_HA4230-MV1
+	KME11_06060_Timaviella_obliquedivisa_GSE-PSE-MK23-08B
+	KME14_01965_Tildeniella_torsiva_UHER_1998_13D
+	'KME16_18805_Scytolyngbya_sp._HA4215-MV1'
+	KME17_02120_Cyanosarcina_radialis_HA8281-LM2
+	KME17_26450_Cyanosarcina_radialis_HA8281-LM2
+	KME20_25850_Kaiparowitsia_implicata_GSE-PSE-MK54-09C
+	'KME22_18875_Hassallia_sp._WJT32-NPBG1'
+	KME28_07745_Pelatocladus_maniniholoensis_HA4357-MV3
+	'KME29_23950_Calothrix_sp._FI2-JRJ7'
+	KME33_17770_Aetokthonos_hydrillicola_B3-Florida
+	'KME35_05345_Aphanocapsa_sp._GSE-SYN-MK-11-07L'
+	'KME35_19865_Aphanocapsa_sp._GSE-SYN-MK-11-07L'
+	KME40_08995_Komarekiella_atlantica_HA4396-MV6
+	KME46_19145_Brasilonema_angustatum_HA4187-MV1
+	'KME47_05515_Nodosilinea_sp._WJT8-NPBG4'
+	KME49_19635_Brasilonema_octagenarum_HA4186-MV1
+	KME49_27245_Brasilonema_octagenarum_HA4186-MV1
+	KME52_29725_Desmonostoc_geniculatum_HA4340-LM1
+	KME64_29640_Scytonematopsis_contorta_HA4267-MV1
+	KME64_40600_Scytonematopsis_contorta_HA4267-MV1
+	'M744_13395_Synechococcus_sp._UTEX_2973_UTEX_2973'
+	MAE_29450_Microcystis_aeruginosa_NIES-843
+	'Mic7113_0421_Microcoleus_sp._PCC_7113_PCC_7113'
+	Npun_R4688_Nostoc_punctiforme_PCC_73102_ATCC_29133__PCC_73102
+	PCC7424_0146_Gloeothece_citriformis_PCC_7424
+	'Ple7327_0252_Pleurocapsa_sp._PCC_7327'
+	'Pse7367_2245_Pseudanabaena_sp._PCC_7367_PCC_7367'
+	'Riv7116_4391_Rivularia_sp._PCC_7116_PCC_7116'
+	'Riv7116_5957_Rivularia_sp._PCC_7116_PCC_7116'
+	'Riv7116_6507_Rivularia_sp._PCC_7116_PCC_7116'
+	'SYNGTI_0425_Synechocystis_sp._PCC_6803_substr._GT-I_'
+	'SYNGTI_2259_Synechocystis_sp._PCC_6803_substr._GT-I_'
+	'SYNGTS_0425_Synechocystis_sp._PCC_6803_GT-S'
+	'SYNGTS_2260_Synechocystis_sp._PCC_6803_GT-S'
+	'SYNPCCN_0425_Synechocystis_sp._PCC_6803_substr._PCC-N_'
+	'SYNPCCN_2258_Synechocystis_sp._PCC_6803_substr._PCC-N_'
+	'SYNPCCP_0425_Synechocystis_sp._PCC_6803_substr._PCC-P_'
+	'SYNPCCP_2258_Synechocystis_sp._PCC_6803_substr._PCC-P_'
+	Sta7437_2267_Stanieria_cyanosphaera_PCC_7437
+	'Syn6312_1119_Synechococcus_sp._PCC_6312_PCC_6312'
+	'Syn7502_02340_Synechococcus_sp._PCC_7502_PCC_7502'
+	'Synpcc7942_0680_Synechococcus_elongatus_=_FACHB-805_PCC_7942'
+	'_Synechocystis_sp._PCC_6803_PCC_6803'
+	cce_0675_Crocosphaera_subtropica_ATCC_51142
+	syc0849_c_Synechococcus_elongatus_PCC_6301
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (KME64_40600_Scytonematopsis_contorta_HA4267-MV1:0.15243,(KME52_29725_Desmonostoc_geniculatum_HA4340-LM1:0.15239,'IJ00_24465_Calothrix_sp._336_3_336_3':0.25015)[&label=0.59]:0.03517,((KME46_19145_Brasilonema_angustatum_HA4187-MV1:0.01554,KME49_27245_Brasilonema_octagenarum_HA4186-MV1:0.01872)[&label=1.0]:0.12998,(((((((KME09_09030_Pleurocapsa_minor_HA4230-MV1:0.42189,(((KME33_17770_Aetokthonos_hydrillicola_B3-Florida:0.57638,'Ple7327_0252_Pleurocapsa_sp._PCC_7327':0.70887)[&label=0.92]:0.21073,('Riv7116_4391_Rivularia_sp._PCC_7116_PCC_7116':0.92902,(KME09_16610_Pleurocapsa_minor_HA4230-MV1:2.18757,((KME49_19635_Brasilonema_octagenarum_HA4186-MV1:0.15589,'ANA_C11715_Anabaena_sp._90_90':0.10175)[&label=1.0]:1.72146,(('Pse7367_2245_Pseudanabaena_sp._PCC_7367_PCC_7367':0.84732,'Cyan7425_0365_Cyanothece_sp._PCC_7425_PCC_7425':1.28503)[&label=0.979]:0.6557,((KME40_08995_Komarekiella_atlantica_HA4396-MV6:0.46742,KME64_29640_Scytonematopsis_contorta_HA4267-MV1:0.42047)[&label=0.999]:1.61249,(('SYNGTS_0425_Synechocystis_sp._PCC_6803_GT-S':0.0,'AOY38_02195_Synechocystis_sp._PCC_6803_PCC_6803_substr._GT-G':0.0,'SYNGTI_0425_Synechocystis_sp._PCC_6803_substr._GT-I_':0.0,'SYNPCCN_0425_Synechocystis_sp._PCC_6803_substr._PCC-N_':0.0,'SYNPCCP_0425_Synechocystis_sp._PCC_6803_substr._PCC-P_':0.0):0.65402,(Npun_R4688_Nostoc_punctiforme_PCC_73102_ATCC_29133__PCC_73102:0.34798,((Cri9333_2215_Crinalium_epipsammum_PCC_9333:0.26102,KME17_02120_Cyanosarcina_radialis_HA8281-LM2:0.2649)[&label=0.849]:0.05741,(('KME22_18875_Hassallia_sp._WJT32-NPBG1':0.164,'Riv7116_5957_Rivularia_sp._PCC_7116_PCC_7116':0.23662)[&label=0.504]:0.0581,'KME29_23950_Calothrix_sp._FI2-JRJ7':0.32376)[&label=0.834]:0.04548)[&label=0.963]:0.20023)[&label=0.842]:0.19939)[&label=0.999]:1.13492)[&label=0.209]:0.21365)[&label=0.844]:0.43254)[&label=0.781]:0.23421)[&label=0.695]:0.20608)[&label=0.562]:0.16456)[&label=0.949]:0.27101,(('ANA_C13627_Anabaena_sp._90_90':0.07607,'AA650_13830_Anabaena_sp._WA102_WA102':0.11266)[&label=1.0]:0.6086,('KME35_19865_Aphanocapsa_sp._GSE-SYN-MK-11-07L':0.51464,'Syn6312_1119_Synechococcus_sp._PCC_6312_PCC_6312':0.26974)[&label=0.998]:0.47815)[&label=0.928]:0.2091)[&label=0.998]:0.4213)[&label=0.893]:0.12853,(KME11_06060_Timaviella_obliquedivisa_GSE-PSE-MK23-08B:0.28102,('Synpcc7942_0680_Synechococcus_elongatus_=_FACHB-805_PCC_7942':0.0,syc0849_c_Synechococcus_elongatus_PCC_6301:0.0,'M744_13395_Synechococcus_sp._UTEX_2973_UTEX_2973':0.0):0.62257)[&label=0.466]:0.08558)[&label=0.703]:0.04396,((PCC7424_0146_Gloeothece_citriformis_PCC_7424:0.19089,Cyan7822_3907_Gloeothece_verrucosa_PCC_7822:0.19862)[&label=0.999]:0.28041,((KME02_14015_Aphanothece_saxicola_GSE-SYN-MK-01-06B:0.09977,Cyagr_2706_Cyanobium_gracile_PCC_6307:0.13127)[&label=1.0]:0.41109,(('Syn7502_02340_Synechococcus_sp._PCC_7502_PCC_7502':0.21828,(('KME35_05345_Aphanocapsa_sp._GSE-SYN-MK-11-07L':0.18273,(('Cal6303_1346_Calothrix_sp._PCC_6303':0.15319,(KME20_25850_Kaiparowitsia_implicata_GSE-PSE-MK54-09C:0.14706,('KME47_05515_Nodosilinea_sp._WJT8-NPBG4':0.0559,KME14_01965_Tildeniella_torsiva_UHER_1998_13D:0.07187)[&label=1.0]:0.16081)[&label=0.959]:0.06152)[&label=0.742]:0.01959,MAE_29450_Microcystis_aeruginosa_NIES-843:0.06322)[&label=0.353]:0.01964)[&label=0.63]:0.0153,KME17_26450_Cyanosarcina_radialis_HA8281-LM2:0.17186)[&label=0.856]:0.03234)[&label=0.846]:0.04665,(cce_0675_Crocosphaera_subtropica_ATCC_51142:0.24488,(('SYNGTS_2260_Synechocystis_sp._PCC_6803_GT-S':0.0,'AOY38_11745_Synechocystis_sp._PCC_6803_PCC_6803_substr._GT-G':0.0,'SYNGTI_2259_Synechocystis_sp._PCC_6803_substr._GT-I_':0.0,'SYNPCCN_2258_Synechocystis_sp._PCC_6803_substr._PCC-N_':0.0,'SYNPCCP_2258_Synechocystis_sp._PCC_6803_substr._PCC-P_':0.0):5.4E-4,'_Synechocystis_sp._PCC_6803_PCC_6803':5.5E-4)[&label=1.0]:0.38454)[&label=0.611]:0.04352)[&label=0.842]:0.08481)[&label=0.535]:0.06582)[&label=0.802]:0.03458)[&label=0.85]:0.03536,Sta7437_2267_Stanieria_cyanosphaera_PCC_7437:0.25881)[&label=0.745]:0.02864,'Riv7116_6507_Rivularia_sp._PCC_7116_PCC_7116':0.41138)[&label=0.798]:0.02482,(KME07_20090_Pegethrix_bostrychoides_GSE-TBD4-15B:0.47905,(KME28_07745_Pelatocladus_maniniholoensis_HA4357-MV3:0.20859,'KME16_18805_Scytolyngbya_sp._HA4215-MV1':0.33357)[&label=0.739]:0.06424)[&label=0.85]:0.05326)[&label=0.912]:0.05032,'Mic7113_0421_Microcoleus_sp._PCC_7113_PCC_7113':0.16285)[&label=0.927]:0.05538)[&label=0.422]:0.03774);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=3.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=495;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="label";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=2;
+	set nodeShape.colourAttribute=null;
+	set nodeShape.isShown=false;
+	set nodeShape.minSize=10.0;
+	set nodeShape.scaleType=Width;
+	set nodeShape.shapeType=Circle;
+	set nodeShape.size=4.0;
+	set nodeShape.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=13;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="Midpoint";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
