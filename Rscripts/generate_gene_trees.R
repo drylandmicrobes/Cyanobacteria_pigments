@@ -25,10 +25,9 @@ printTree <- function(treefile,odir) {
     gene_name = sub(pattern = "(.*)_long.tre$", replacement = "\\1",
                     basename(treefile))
     outfile <- file.path(odir,sprintf("%s.pdf",gene_name))
-    print(outfile)
     tree <- read.tree(treefile)
-    pt <- ggtree(tree) + geom_tiplab()
-    ggsave(outfile,pt) 
+    pt <- ggtree(tree) + geom_tiplab(font.size=2)
+    ggsave(outfile,pt,width=15,height=15) 
 }
 
 
