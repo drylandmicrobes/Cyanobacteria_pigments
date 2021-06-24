@@ -2,8 +2,8 @@
 library(ggtree)
 #library(tidyverse)
 
-treeext = "_long.tre"
-infolder = "genetree_BLASTP"
+treeext = "_FT_LG_GAMMA_long.tre"
+infolder = "genetree_pHMMer"
 outfolder = ""
 # args would be
 # Rscripts generate_gene_trees.R INFOLDER OUTFOLDER
@@ -27,9 +27,11 @@ printTree <- function(treefile,odir) {
     outfile <- file.path(odir,sprintf("%s.pdf",gene_name))
     print(outfile)
     tree <- read.tree(treefile)
+    pt <- ggtree(tree) + geom_tiplab()
+    ggsave(outfile,pt) 
 }
 
 
-treefiles <- list.files(infolder,pattern="_FT_LG_GAMMA_long.tre$",full.names=TRUE)
+treefiles <- list.files(infolder,pattern=treeext,full.names=TRUE)
 
-printTree(treefiles[1],outfolder)
+lapply(treefiles,printTree,outfolder)
