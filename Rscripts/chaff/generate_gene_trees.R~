@@ -1,0 +1,9 @@
+library(ggplot2)
+library(ggtree)
+library(tidyverse)
+
+treeext = "_long.tre"
+infolder = "genetree_BLASTP"
+
+args <- commandArgs()
+cat(args, sep = "\n")

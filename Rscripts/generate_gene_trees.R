@@ -1,5 +1,6 @@
 #library(ggplot2)
 library(ggtree)
+library(phytools)
 #library(tidyverse)
 
 treeext = "_FT_LG_GAMMA_long.tre"
@@ -26,10 +27,13 @@ printTree <- function(treefile,odir) {
                     basename(treefile))
     outfile <- file.path(odir,sprintf("%s.pdf",gene_name))
     tree <- read.tree(treefile)
-    pt <- ggtree(tree) + geom_tiplab(font.size=2)
-    ggsave(outfile,pt,width=15,height=15) 
+#    rootedtree <- root(tree, outgroup)
+    rootedtree <- midpoint.root(tree)
+#    rootedtree <- tree
+    pt <- ggtree(rootedtree,layout="circular") + 
+        geom_tiplab(font.size=1)
+    ggsave(outfile,pt,width=30,height=30) 
 }
-
 
 treefiles <- list.files(infolder,pattern=treeext,full.names=TRUE)
 

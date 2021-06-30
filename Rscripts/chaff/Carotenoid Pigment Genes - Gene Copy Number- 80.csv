@@ -1,0 +1,74 @@
+CheckM Completeness,Aquatic/ Terrestrial ,Habitat,Habitat Defined ,Genome,Cyanobacteria Species,crtB,crtI,crtC,crtF,crtK-2,crtL,crtM,crtN,crtP,crtQ,crtX,fni,crtW
+99.28,aquatic,Freshwater,freshwater,Aetokthonos_hydrillicola,Aetokthonos hydrillicola,2,5,0,0,2,0,0,0,0,0,2,1,0
+99.76,aquatic,Rock (Wetwall),wetwall rock,Aphonocapsa_sp._GSE-SYN-MK-11-07L,Aphonocapsa sp.,2,4,0,0,0,0,0,0,0,0,1,1,0
+99.28,terrestrial,Soil,soil,Brasilonema_angustatum_HA4187-MV1,Brasilonema angustatum,1,5,0,0,0,0,0,0,0,1,1,1,0
+99.15,terrestrial,Soil ,soil,calothrix_sp_F12-JRJ7,calothrix sp.,1,6,0,0,1,0,0,0,0,0,1,1,0
+99.11,unknown,Rock (Cavewall),rock,Desmonostoc_genicultatum_HA340-LM1,Desmonostoc genicultatum,1,3,0,0,0,0,0,0,0,0,2,1,0
+99.53,aquatic,Rock (Wetwall),wetwall rock,Drouetiella_hepatica_UHER_2000_2452,Drouetiella hepatica,1,3,0,0,0,0,0,1,0,1,0,1,8
+99.76,terrestrial,Soil,soil,Drouetiella_lurida_LUKESOVA1986_6,Drouetiella lurida,1,2,0,0,0,0,0,2,0,1,0,1,4
+99.11,terrestrial,Soil,soil,Gloeocaspa_sp._UFS-A4-WI-NPMV-4B04,Gloeocaspa sp.,1,1,0,0,0,0,0,1,0,0,4,1,5
+99.56,unknown,Rock (Cavewall),rock,Goleter_admare_HA340-LM2,Goleter admare,1,3,0,0,0,0,0,1,0,0,1,1,7
+100,terrestrial,Soil,soil,Hassallia_sp._WJT32-NPBG1,Hassallia sp.,1,6,0,0,0,0,0,0,0,0,3,1,0
+99.56,terrestrial,Soil,soil,Hernandeziana_sp._ATA11-4-KO1,Hernandeziana sp.,1,4,0,0,0,0,0,1,0,0,1,1,0
+100,terrestrial,Soil,soil,Kastovskya_atacamensis_ATA6-11-RM4,Kastovskya atacamensis,1,3,0,0,0,0,0,0,0,0,0,1,0
+93.1,terrestrial,Soil,soil,Microcoleus_sp._PCC_7113_CLC_1,Microcoleus sp.,1,5,0,0,0,0,0,0,1,0,0,4,4
+93.1,terrestrial,Soil ,soil,Microcoleus_sp._PCC_7113_LAC_3,Microcoleus sp.,1,7,0,0,0,0,0,0,0,0,1,2,0
+99.53,terrestrial,Soil,soil,Myxacorys_chilensis_ATA2-1-KO14,Myxacorys chilensis,2,4,0,0,0,0,0,0,0,1,0,1,0
+99.56,terrestrial,Soil,soil,Nostoc_desertorum_CM1-VF14,Nostoc desertorum,1,4,0,0,0,0,0,1,0,0,1,1,0
+99.7,terrestrial,Soil,soil,Nostoc_indistinguendum_CM1-VF10,Nostoc indistinguendum,2,4,0,0,0,0,0,0,0,0,3,2,17
+99.71,aquatic,Freshwater,freshwater,Oscillatoria_princeps_RMCB-10,Oscillatoria princeps,1,5,0,0,0,0,0,0,0,0,1,1,0
+99.41,terrestrial,Soil,soil,Oscillatoria_tanganyikae_FI-MK23,Oscillatoria tanganyikae,1,5,0,0,0,0,0,2,0,1,2,1,0
+96.82,aquatic,Rock (Wetwall),wetwall rock,Pegethrix_bostrychoides_GSE-TBD4-15B,Pegethrix bostrychoides,1,4,0,1,0,0,0,0,0,0,0,1,0
+98.91,terrestrial,Soil,soil,Pleurocapsa_ercegoicii_ATA3-5Q-KO4,Pleurocapsa ercegoicii,2,4,0,0,0,0,0,1,0,0,1,1,0
+89.19,terrestrial,Soil,soil,Scytonema_sp._NIES-4073_CLC_1,Scytonema sp.,1,4,0,0,1,0,0,0,0,1,3,1,0
+99.78,terrestrial,Soil,soil,Symplocastrum_torsivum_CPER-KK1,Symplocastrum torsivum,1,7,0,0,0,0,0,1,0,0,2,1,0
+100,aquatic,Rock (Wetwall),wetwall rock,Timaviella_obliquedivisa_GSE-PSE-MK23-08B,Timaviella obliquedivisa,3,6,0,0,0,0,0,1,0,1,2,2,0
+99.29,aquatic,Rock (Wetwall),wetwall rock,Timaviella_radians_GSE-UNK-7R,Timaviella radians,1,4,0,0,0,0,0,0,1,1,1,1,0
+100,aquatic,Rock (Wetwall),wetwall rock,Tolypothrix_brevis_GSE-NOS-MK-07-07A,Tolypothrix brevis,1,2,0,0,0,0,0,0,0,0,1,1,0
+99.52,unknown,Rock (Cavewall),rock,Tolypothrix_carrinoi_HA7290-LM1,Tolypothrix carrinoi,1,5,0,0,0,0,0,1,0,0,2,1,0
+99.29,terrestrial,Soil,soil,Trichocoleus_desertorum_ATA4-8-CV12,Trichocoleus desertorum,1,8,0,0,0,0,0,1,0,1,3,1,5
+99.29,aquatic,Freshwater,freshwater,Scytolyngbya_sp._HA4215-MV1,Scytolyngbya sp.,1,2,0,0,0,0,0,1,0,1,0,1,2
+100,aquatic,Rock (Wetwall),wetwall rock,Cyanomagaritha calcarea GSE-NOS-MK-12-04C,Cyanomagaritha calcarea ,1,4,0,0,0,0,0,0,0,0,1,1,0
+99.76,terrestrial,Soil,soil,Iphinoe_sp._HA4291-MV1,Iphinoe sp.,1,3,0,0,1,0,0,1,0,0,2,1,0
+99.06,terrestrial,Soil,soil,Lyngbya_sp._HA4199-MV5,Lyngbya sp.,1,3,0,0,0,0,0,0,0,1,0,1,0
+99.17,terrestrial,Soil,soil,Plectolynbya_sp._WJT66-NPBG17,Plectolynbya sp.,1,5,0,0,0,0,0,2,0,1,1,1,5
+98.69,unknown,Rock (man-made),rock,Pleurocapsa_minor_HA4230-MV1,Pleurocapsa minor,2,5,0,0,0,0,0,0,0,0,2,1,0
+99.04,terrestrial,Soil,soil,Scytonema_hyalinum_WJT4-NPBG1,Scytonema hyalinum,1,5,0,0,1,0,0,1,0,2,4,1,14
+99.76,unknown,Rock (Cavewall),rock,Stenomitos_rutilens_HA7619-LM2,Stenomitos rutilens,1,4,0,0,0,0,0,0,0,1,1,1,0
+80.25,aquatic,intertidal zone (water),salt water,Anabaena_sp_PCC_7108,Anabaena sp.,2,4,0,0,0,0,0,0,0,0,1,1,0
+82.95,aquatic,freshwater (lake),freshwater,Cyanobium_gracile_PCC_6307,Cyanobium gracile,2,5,0,0,1,1,0,0,0,1,0,0,1
+80.4,aquatic,moderate hot spring (water),freshwater,Gloeocaspa_sp_.PCC_7428,Gloeocaspa sp.,1,6,0,0,0,0,0,1,0,0,3,1,5
+81.27,aquatic,Iron-depositing hot spring (water),freshwater,Leptolyngbya_sp._JSC-1,Leptolyngbya sp.,1,5,0,0,0,0,0,1,0,2,1,1,0
+82.04,aquatic,Fresh water,freshwater,Leptolyngbya_sp._PCC_6406,Leptolyngbya sp.,1,1,0,0,0,0,0,0,0,1,0,1,0
+82.13,aquatic,rock at shoreline,salt water,Leptolyngbya_sp._PCC_7104,Leptolyngbya sp.,2,3,0,0,0,1,0,0,2,1,0,1,3
+82.68,aquatic,"Plankton, Woods Hole region, Massachusetts, U.S.A.,  (water)",freshwater,Leptolyngbya_sp._PCC_7375,Leptolyngbya sp.,1,4,0,0,0,1,0,2,1,2,0,1,0
+99.04,unknown,marine but rock surface,salt water,Mastigocoleus_testarum_BC008,Mastigocoleus testarum ,1,9,0,0,0,0,0,1,0,1,3,1,0
+99.56,aquatic,freshwater aquarium,freshwater,Microchaete_sp_PCC_7126,Microchaete sp.,1,4,0,0,0,0,0,1,0,0,3,1,0
+99.56,terrestrial,Soil,soil,Microcoleus_sp._PC_7113,Microcoleus sp.,1,5,0,0,0,0,0,0,0,1,0,2,0
+99.26,aquatic,shallow pond (water),freshwater,Nostoc_sp_PCC_7107,Nostoc sp. ,1,4,0,0,0,0,0,0,0,1,0,1,5
+99.33,aquatic,moderate hot spring (water),freshwater,Nostoc_sp_PCC_7524,Nostoc sp.,1,5,0,0,0,0,0,0,0,0,0,1,5
+99.56,aquatic,Pool at botanical garden (water),freshwater,Stanieria_sp._PCC_7437,Stanieria sp.,1,3,0,0,0,0,0,1,0,1,0,1,0
+100,unknown,unkown,unknown,Oscillatoria_sp_PCC_10802,Oscillatoria sp.,1,3,0,0,0,0,0,0,0,1,1,1,0
+99.56,aquatic,fresh water,freshwater,Oscillatoria_sp._PCC_6407,Oscillatoria sp.,1,3,0,0,0,0,0,1,0,0,0,1,0
+99.78,terrestrial,soil,soil,Oscillatoria_sp._PCC_7112,Oscillatoria sp.,1,5,0,0,0,0,0,0,0,0,2,1,0
+99.53,unknown,freshwater,freshwater,Oscillatoriales_the_cyanobacterium__JSC-12,Oscillatoriales the cyanobacterium,1,4,0,0,0,0,0,0,0,1,0,1,0
+99.56,unknown,snail shell (soil),soil,Pleurocapsa_sp_PCC_7319,Pleurocapsa sp.,1,3,0,0,0,0,0,1,0,0,0,1,0
+99.49,aquatic,spring water,freshwater,Pleurocapsa_sp._PCC_7327,Pleurocapsa sp.,1,4,0,0,0,0,0,0,0,2,2,1,2
+99.18,aquatic,"Water, lake, Solar lake, Israel",salt water,Prochlorothrix_sp._PCC_9006,Prochlorothrix sp.,1,2,0,0,0,0,0,0,0,0,0,1,0
+99.29,aquatic,"Sphagnum bog, (water)",freshwater,Pseudanabaena_sp._PCC_7429,Pseudanabaena sp.,1,1,0,0,0,0,0,1,0,0,0,1,4
+99.78,aquatic,marine water,salt water,Rivularia_sp_PCC_7116,Rivularia sp.,1,5,0,0,0,0,0,0,0,0,1,1,0
+99.67,aquatic,Brackish water,salt water,Spirulina_major_PCC_6313,Spirulina major,1,4,0,0,0,0,0,0,0,0,0,1,0
+99.56,unknown,Crude sample,unknown,Spirulina_sp._PCC_9445,Spirulina sp.,1,3,0,0,0,0,0,0,0,0,0,1,0
+100,aquatic,Freshwater lake,freshwater,Synechococcus_elongatus_PCC7942,Synechococcus elongatus,1,2,0,0,0,1,0,0,1,0,0,1,0
+99.46,aquatic,Eastern Pacific Ocean (water),salt water,Synechococcus_sp_CC9616,Synechococcus sp.,1,2,0,0,0,1,0,0,0,0,0,0,0
+99.29,aquatic,"Fresh water,",freshwater,Synechococcus_sp_PCC_6312,Synechococcus sp.,2,0,0,0,0,0,0,1,0,0,0,1,0
+100,aquatic,Sea water,salt water,Synechococcus_sp_PCC_7336,Synechococcus sp.,1,2,0,0,0,0,0,0,0,1,0,0,0
+99.76,aquatic,Sphagnum bog (water),freshwater,Synechococcus_sp_PCC_7502,Synechococcus sp.,1,1,0,0,0,0,0,1,0,1,0,1,0
+99.67,unknown,rock scraping,rock,Synechocystis_sp_PCC_7509,Synechocystis sp.,1,3,0,0,0,0,0,0,0,0,2,1,0
+99.71,terrestrial,soil,soil,Oscillatoria_acuminata_PCC_6304,Oscillatoria acuminata,1,4,0,0,0,0,0,1,0,0,0,1,0
+80.4,terrestrial,soil,soil,Cylindrospermum_stagnale_PCC_7417,Cylindrospermum stagnale,1,3,0,0,0,0,0,0,0,0,0,1,0
+99.15,unknown,"Rock, calcareous",rock,Gloebacter_violaceus_PCC7421,Gloebacter violaceus,2,3,0,0,0,0,0,0,0,0,0,0,2
+80.86,unknown,unialgal culture in lake water ,freshwater,leptolyngbya_boryana_PCC_6306,leptolyngbya boryana,1,5,0,0,0,0,0,1,0,1,0,1,0
+99.67,terrestrial,Soil,soil,Microcoleus_vaginatus_FGP-2,Microcoleus vaginatus,1,4,0,0,0,0,0,1,0,1,0,1,0
+99.76,unknown,"Water, pond",freshwater,Pseudanabaena_sp_PCC_6802,Pseudanabaena sp.,1,2,0,0,0,0,0,1,0,1,0,1,0
+99.76,unknown,limestone (water),freshwater,Tolypothrix_sp._PCC_9009,Tolypothrix sp.,1,4,0,0,0,0,0,0,0,0,1,1,0
