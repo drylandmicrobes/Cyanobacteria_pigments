@@ -1,0 +1,115 @@
+Strain,Habitat,crtRa,crtRb,crtG,crtX,crtW,crtOa,crtOb,crtZ,crtN,crtP,crtQa,crtQb,cruF,crtM
+Acaryochloris_marina_MBIC11017,saltwater,1,1,0,2,0,14,0,0,8,11,5,6,6,4
+Aetokthonos_hydrillicola_B3-Florida,symbiont,1,3,1,4,1,15,0,0,13,12,5,5,5,1
+Anabaena_cylindrica_PCC_7122,freshwater,1,1,0,1,0,10,0,0,8,6,11,8,8,3
+Anabaena_sp._90_90,freshwater,1,1,2,3,0,11,0,0,8,5,2,2,2,2
+Anabaena_sp._WA102_WA102,freshwater,1,5,1,2,0,10,0,0,8,7,2,2,2,2
+Aphanocapsa_lilacina_HA4352-LM1,cave ,0,2,0,3,1,8,0,0,9,9,5,6,6,3
+Aphanocapsa_sp._GSE-SYN-MK-11-07L,desert ,1,2,2,2,2,8,0,0,10,9,7,6,6,3
+Aphanothece_saxicola_GSE-SYN-MK-01-06B,desert,2,4,1,2,1,9,1,0,7,9,2,2,2,1
+Aphanothece_sp._CMT-3BRIN-NPC111,desert,1,1,0,1,0,7,0,0,7,6,6,5,5,1
+Brasilonema_angustatum_HA4187-MV1,tropical,3,1,1,1,1,11,0,0,9,9,5,5,5,1
+Brasilonema_octagenarum_HA4186-MV1,tropical,1,3,1,3,1,12,0,0,9,8,7,8,8,1
+Calothrix_sp._336_3_336_3,freshwater,1,1,1,2,0,9,0,0,9,6,6,3,3,1
+Calothrix_sp._FI2-JRJ7,desert,2,4,0,9,2,19,0,0,16,10,10,8,8,3
+Calothrix_sp._PCC_6303,freshwater,2,2,1,2,0,8,0,0,10,6,2,2,2,3
+Calothrix_sp._PCC_7507_PCC_7507,freshwater,1,1,0,2,1,15,0,0,13,7,6,6,6,3
+Candidatus_Atelocyanobacterium_thalassa_isolate_ALOHA_ALOHA,saltwater,1,1,0,0,0,2,0,0,0,0,1,1,1,3
+Chroococcidiopsis_thermalis_PCC_7203,soil,1,1,1,1,1,17,0,0,12,23,11,7,7,1
+Chroococcus_sp._CMT-3BRIN-NPC107,desert,1,1,0,1,3,4,0,0,7,5,2,2,2,1
+Crocosphaera_subtropica_ATCC_51142,saltwater,1,2,1,0,0,11,0,0,10,7,7,5,5,1
+Cyanobacterium_aponinum_PCC_10605,freshwater,1,1,0,0,0,4,1,0,6,5,7,5,5,2
+cyanobacterium_endosymbiont_of_Epithemia_turgida_isolate_EtSB_Lake_Yunoko_ETSB_Lake_Yunoko,symbiont,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cyanobium_gracile_PCC_6307,freshwater,2,4,1,0,1,9,1,0,7,9,5,5,5,1
+Cyanomargarita_calcarea_GSE-NOS-MK-12-04C,desert,1,3,0,2,1,13,0,0,13,8,6,6,6,3
+Cyanosarcina_radialis_HA8281-LM2,cave,1,1,2,3,2,8,0,0,8,7,4,3,3,3
+Cyanothece_sp._PCC_7425_PCC_7425,freshwater,1,3,1,4,3,10,0,0,12,8,5,6,6,3
+Dactylococcopsis_salina_PCC_8305,saltwater,1,3,0,0,0,9,0,0,7,8,5,5,5,1
+Desmonostoc_geniculatum_HA4340-LM1,cave,2,2,1,3,1,10,0,0,10,9,3,3,3,3
+Desmonostoc_vinosum_HA7617-LM4,cave,1,3,0,5,1,11,0,0,11,12,10,8,8,3
+Drouetiella_hepatica_UHER_2000_2452,rock,3,2,0,1,2,8,0,0,9,7,7,7,7,3
+Gloeobacter_kilaueensis_JS1,cave,0,0,0,3,1,10,0,0,10,12,5,3,3,2
+Gloeobacter_violaceus_PCC_7421,rock ,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Gloeocapsa_sp._PCC_7428_PCC_7428,hot spring,2,1,0,4,2,17,0,0,12,13,7,7,7,1
+Gloeocapsa_sp._UFS-A4-WI-NPMV-4B04,desert,1,1,0,5,1,1,0,0,3,2,5,3,3,0
+Gloeothece_citriformis_PCC_7424,freshwater,1,2,1,1,0,15,0,0,11,7,6,5,5,3
+Gloeothece_verrucosa_PCC_7822,freshwater,4,7,1,3,6,16,0,0,12,9,5,5,5,2
+Goleter_apudmare_HA4340-LM2,cave,1,1,0,2,1,9,0,0,12,10,6,6,6,3
+Halothece_sp._PCC_7418_PCC_7418,saltwater,1,1,0,0,0,11,0,0,7,9,4,4,4,1
+Hassallia_sp._WJT32-NPBG1,desert,1,1,0,6,1,9,0,0,8,8,3,3,3,3
+Iphinoe_sp._HA4291-MV1,tropical,1,3,0,5,1,8,0,0,6,4,5,5,5,3
+Kaiparowitsia_implicata_GSE-PSE-MK54-09C,desert,1,3,1,1,1,9,0,0,8,8,6,5,5,1
+Kastovskya_adunca_ATA6-11-RM4,desert,6,4,0,0,2,7,0,0,7,5,6,6,6,1
+Komarekiella_atlantica_HA4396-MV6,tropical,1,1,1,3,1,12,0,0,14,12,9,5,5,3
+Leptolyngbya_sp._PCC_7376_,cave,2,1,0,2,1,8,0,0,6,7,5,4,4,1
+Lyngbya_sp._HA4199-MV5,tropical,1,1,0,1,2,6,0,0,9,9,2,2,2,1
+Microcoleus_sp._PCC_7113_PCC_7113,soil,1,1,1,4,0,12,0,0,9,9,6,6,6,1
+Microcoleus_vaginatus_WJT46-NPBG5,desert,1,1,0,1,1,7,0,0,9,6,11,9,9,1
+Microcystis_aeruginosa_NIES-843,freshwater,1,1,1,1,0,6,1,0,5,5,2,2,2,3
+Mojavia_pulchra_JT2-VF2,desert,1,5,0,7,1,12,0,0,14,12,9,8,8,3
+Myxacorys_californica_WJT36-NPBG1,desert,1,1,0,4,1,10,0,0,11,7,5,5,5,3
+Myxacorys_chilensis_ATA2-1-KO14,desert,1,3,0,4,1,9,0,0,9,7,4,2,2,3
+Nodosilinea_sp._WJT8-NPBG4,desert,1,5,1,1,1,14,0,0,13,9,4,4,4,3
+Nostoc_azollae_0708,symbiont,1,1,0,0,0,4,0,0,4,4,2,2,2,1
+Nostoc_desertorum_CM1-VF14,desert,1,1,0,4,1,12,0,0,16,12,5,4,4,3
+Nostoc_indistinguendum_CM1-VF10,desert,1,1,0,4,1,12,0,0,14,10,4,3,3,3
+Nostoc_punctiforme_PCC_73102_ATCC_29133__PCC_73102,symbiont,1,7,3,3,2,11,0,0,13,9,8,5,5,3
+Nostoc_sp._PCC_7107_PCC_7107,freshwater,1,2,0,0,1,8,0,0,8,7,6,6,6,3
+Nostoc_sp._PCC_7524_PCC_7524,hot spring,1,1,0,2,0,17,0,0,14,13,12,9,9,3
+Oscillatoria_acuminata_PCC_6304,soil,1,1,0,1,0,11,0,0,10,8,4,4,4,1
+Oscillatoria_nigro-viridis_PCC_7112,soil,1,1,0,2,0,16,0,0,12,7,6,6,6,1
+Oscillatoria_princeps_RMCB-10,freshwater,1,1,0,2,0,9,0,0,8,8,6,9,9,1
+Oscillatoria_tanganyikae_FI6-MK23,desert,1,3,0,2,1,14,0,0,14,9,2,2,2,3
+Pegethrix_bostrychoides_GSE-TBD4-15B,desert,1,5,1,2,0,9,0,0,13,6,7,6,6,3
+Pelatocladus_maniniholoensis_HA4357-MV3,cave,1,1,1,3,0,9,0,0,9,8,3,3,3,3
+Plectolyngbya_sp._WJT66-NPBG17,desert,1,3,0,1,1,14,0,0,13,9,2,2,2,3
+Pleurocapsa_minor_GSE-CHR-MK-17-07R,desert,0,0,0,12,0,9,0,0,11,9,10,8,8,1
+Pleurocapsa_minor_HA4230-MV1,tropical ,2,4,3,4,3,9,0,0,9,11,4,4,4,1
+Pleurocapsa_sp._PCC_7327,hot spring,1,1,1,2,0,13,1,0,10,7,10,8,8,3
+Prochlorococcus_marinus_str._AS9601,saltwater,1,1,0,0,0,6,0,0,7,8,2,2,2,1
+Prochlorococcus_marinus_str._MIT_9215,saltwater,1,1,0,0,0,6,0,0,8,7,2,2,2,1
+Prochlorococcus_marinus_str._MIT_9301,saltwater,1,1,0,0,0,6,0,0,7,7,2,2,2,1
+Prochlorococcus_marinus_str._MIT_9312,saltwater,1,1,0,0,0,6,0,0,8,8,2,2,2,1
+Prochlorococcus_marinus_str._MIT_9515,saltwater,1,1,0,0,0,5,0,0,8,6,2,2,2,1
+Prochlorococcus_marinus_str._NATL1A,saltwater,1,1,0,0,0,5,0,0,6,7,2,2,2,1
+Prochlorococcus_marinus_str._NATL2A,saltwater,1,1,0,0,0,9,0,0,6,7,2,2,2,1
+Prochlorococcus_sp._MIT_0604_MIT_0604,saltwater,1,1,0,0,0,6,0,0,8,8,2,2,2,1
+Prochlorococcus_sp._MIT_0801_MIT_0801,saltwater,1,1,0,0,0,6,0,0,6,7,2,2,2,1
+Rippkaea_orientalis_PCC_8801,freshwater,1,1,0,1,0,9,0,0,6,6,5,7,7,3
+Rippkaea_orientalis_PCC_8802,freshwater,1,1,0,1,0,12,0,0,8,8,5,5,5,3
+Rivularia_sp._PCC_7116_PCC_7116,saltwater,1,1,2,4,1,18,0,0,15,10,4,5,5,1
+Scytolyngbya_sp._HA4215-MV1,freshwater,1,1,1,2,0,5,0,0,9,8,4,2,2,3
+Scytonema_hyalinum_WJT4-NPBG1,desert,1,1,0,5,1,12,0,0,11,8,8,9,9,1
+Scytonematopsis_contorta_HA4267-MV1,tropical,5,7,3,7,1,15,0,0,14,12,14,14,14,3
+Spirirestis_raphaelensis_WJT71-NPBG6,desert,1,1,0,3,1,14,0,0,13,9,3,3,3,3
+Stanieria_cyanosphaera_PCC_7437,freshwater ,1,1,1,0,0,9,0,0,9,7,2,2,2,3
+Stenomitos_rutilans_HA7619-LM2,cave,1,1,0,2,3,6,0,0,7,8,2,2,2,1
+Symplocastrum_torsivum_CPER-KK1,soil,3,2,0,4,4,17,0,0,15,13,8,8,8,1
+Synechococcus_elongatus_=_FACHB-805_PCC_7942,freshwater,1,2,1,1,0,8,0,0,8,8,4,4,4,1
+Synechococcus_elongatus_PCC_6301,freshwater,1,2,1,1,0,9,0,0,8,8,4,4,4,1
+Synechococcus_sp._CC9311_CC9311,saltwater,1,1,0,0,1,11,0,0,6,7,2,2,2,1
+Synechococcus_sp._CC9605_CC9605,saltwater,1,1,0,0,0,10,0,0,7,8,3,3,3,1
+Synechococcus_sp._CC9902_CC9902,saltwater,2,1,0,0,1,6,0,0,5,5,3,3,3,1
+Synechococcus_sp._JA-3-3Ab_JA-3-3Ab,hot spring,1,1,0,0,0,2,0,0,2,2,4,4,4,1
+Synechococcus_sp._KORDI-100_KORDI-100,saltwater,1,1,0,0,0,5,0,0,7,6,3,3,3,1
+Synechococcus_sp._KORDI-49_KORDI-49,saltwater,1,1,0,0,1,2,0,0,3,2,2,2,2,1
+Synechococcus_sp._KORDI-52_KORDI-52,saltwater,1,1,0,1,0,9,0,0,7,8,3,3,3,1
+Synechococcus_sp._PCC_6312_PCC_6312,freshwater,1,3,1,0,1,2,0,0,3,3,2,4,4,3
+Synechococcus_sp._PCC_7002_PCC_7002__ATCC_27264,saltwater,2,4,0,0,1,7,0,0,6,8,5,4,4,1
+Synechococcus_sp._PCC_7502_PCC_7502,freshwater,2,3,1,0,1,6,0,0,3,4,2,2,2,3
+Synechococcus_sp._WH_8109_WH_8109,saltwater,1,1,0,0,0,10,0,0,7,9,2,3,3,1
+Synechocystis_sp._PCC_6714_PCC_6714,freshwater,1,3,0,1,0,5,0,0,7,9,8,8,8,3
+Synechocystis_sp._PCC_6803_GT-S,freshwater,1,7,2,1,0,5,0,0,7,9,5,5,5,3
+Synechocystis_sp._PCC_6803_substr._GT-I_,freshwater,1,7,2,1,0,5,0,0,7,9,5,5,5,3
+Synechocystis_sp._PCC_6803_substr._PCC-N_,freshwater,1,7,2,1,0,5,0,0,7,9,5,5,5,3
+Synechocystis_sp._PCC_6803_substr._PCC-P_,freshwater,1,7,2,1,0,5,0,0,7,9,5,5,5,3
+Thermosynechococcus_elongatus_BP-1,hot spring,1,0,0,0,0,0,0,0,0,0,2,2,2,0
+Tildeniella_nuda_ZEHNDER_1965_U140,temperate,1,1,0,1,2,6,0,0,9,8,2,2,2,1
+Tildeniella_torsiva_UHER_1998_13D,temperate ,1,5,1,0,1,13,0,0,10,9,4,4,4,3
+Timaviella_obliquedivisa_GSE-PSE-MK23-08B,desert,2,1,1,1,1,6,0,0,6,5,4,2,2,1
+Tolypothrix_brevis_GSE-NOS-MK-07-07A,desert,1,1,0,2,1,7,0,0,8,5,2,3,3,3
+Tolypothrix_carrinoi_HA7290-LM1,cave ,1,2,0,3,0,10,0,0,12,10,6,3,3,3
+Trichocoleus_desertorum_ATA4-8-CV12,desert ,2,3,1,2,2,11,0,0,13,9,3,4,4,1
+Trichodesmium_erythraeum_IMS101,saltwater,1,1,0,1,0,12,0,0,11,11,5,5,5,3
+Trichormus_sp._ATA11-4-KO1,desert,1,1,0,1,1,10,0,0,14,8,6,6,6,1
+Trichormus_variabilis_ATCC_29413,freshwater,1,1,0,0,2,12,0,0,12,10,9,6,6,3

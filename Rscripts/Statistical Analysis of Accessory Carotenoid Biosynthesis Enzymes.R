@@ -16,7 +16,7 @@ output: pdf_document
 #that could be important for photoprotection. 
 #######################################################
 
-```{pca}
+```{R}
 #load packages and blastp raw hits data 
 library(devtools)
 library(ggbiplot)
@@ -58,7 +58,7 @@ ggbiplot(pca_accessory,labels= rownames(small),ellipse=FALSE,obs.scale = 3,var.s
   theme(legend.position = "bottom")
 
 ```
-```{nmds}
+```{R}
 #load packages 
 library(vegan)
 library(ggplot2)
@@ -144,7 +144,7 @@ points(cent [,-1],
 )
 ```
                 
-```{permanova}
+```{R}
 
 #data prepartion 
 rownames(accessory_matrix) = accessory$Strain
@@ -190,7 +190,7 @@ permutest(bd_accessory)
 simp_accessory= simper(accessory_matrix, group= accessory$Habitat)
 summary(simp_accessory)
 #Results of simper test
-
+```
 Contrast: saltwater_symbiont 
 
 average       sd  ratio    ava    avb cumsum
