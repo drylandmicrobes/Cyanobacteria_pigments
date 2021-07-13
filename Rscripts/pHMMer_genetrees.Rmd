@@ -1,0 +1,56 @@
+---
+title: "Carotenoid Gene Trees pHMMer"
+output: pdf_document
+---
+
+```{r attempt #1 from youtube video}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(ggtree)
+library(reshape2)
+library(ggstance)
+library(treeio)
+library(tidytree)
+library(ape)
+setwd("/bigdata/stajichlab/shared/projects/Cyanobacteria/Cyanobacteria_pigments/genetree_pHMMer")
+
+
+#load tree data 
+#NOTE: must convert nexus files to newick, can do this in figtree 
+mytree_crtBa <- 'crtBa.newick'
+tree_crtBa <- read.tree(mytree_crtBa)
+
+#import group metadata
+library(readr)
+crtBagroups <- read.table("Nicole's Habitat Data Sets - crtBa_groups.tsv", sep = '\t', 
+                         col.names = c('Tip_label', 'Habitat'),
+                         header = FALSE)
+crtBagroups
+
+#convert group metadata to R data frame and combine with tree data 
+gdata_crtBa = as.data.frame(crtBagroups)
+crtBa_tree1 = full_join(as_tibble(tree_crtBa), gdata_crtBa, by = c('label'='Habitat'))
+crtBa_tree2 = as.treedata(crtBa_tree1)
+
+#Warning message:`mutate_()` was deprecated in dplyr 0.7.0. Please use `mutate()` instead. See vignette('programming') for more help --> make sure to have Ape package! 
+
+crtBa_color <- ggtree(crtBa_tree2) + geom_tiplab(aes(color =Habitat)) + xlim(-5,5)
+```
+
+``````{r attempt #2}
+#load packages and set wd 
+library(ggtree)
+set.seed(2017-02-16)
+setwd("/bigdata/stajichlab/shared/projects/Cyanobacteria/Cyanobacteria_pigments/genetree_pHMMer")
+
+#load tree data 
+#NOTE: must convert nexus files to newick, can do this in figtree 
+mytree_crtBa <- 'crtBa.newick'
+tree_crtBa <- read.tree(mytree_crtBa)
+ggtree(tree_crtBa) + geom_tiplab(align = TRUE, linesize = 0.25)
+
+#import group metadata
+#library(readr)
+groups_all <- read_csv("Cyanobacteria and Carotenoids Metadata - groups_all.csv")
+groups_all
+crtBa_tiplabels <- TipLabels(mytree_crtBa)

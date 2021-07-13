@@ -5,13 +5,13 @@ output: pdf_document
 
 #################### PREFACE ##########################
 #Code for PCA, NMDS, and PERMANOVA/ simper test 
-#of pHMMer results. ALL ENZYMES TEST RUN 
-#carotenoid biosynthesis enzymes:
-#Can percent idenitities give us an insight on 
-#disimilarities in the pathway between habitats?  
+#of pHMMer results.  
+#IPP biosynthesis enzymes: 
+#Habitats: "saltwater"  "symbiont" "freshwater" "cave" 
+#"desert" "tropical" "soil" "rock" "hot spring" "temperate"
 #######################################################
 
-```{r setup, include=FALSE}
+```{r PCA, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 #load packages and blastp raw hits data 
 library(devtools)
@@ -27,16 +27,12 @@ range(phmmer_IPP_matrix) #0 10
 pca_phmmer_IPP= prcomp(phmmer_IPP_matrix, center= TRUE, scale.= TRUE)
 summary(pca_phmmer_IPP)
 str(pca_phmmer_IPP)
-#
-
 
 #make groups based on habitat
 habitat= phmmer_IPP$Habitat
+```
 
-
-#try to make group colours, this should be added to plot code 
-scale_colour_manual(name= "Habitat", values= c("brown", "dark orange", "blue", "pink", "red", "dark blue", "forest green", "dark yellow", "red", "black"))
-
+```{r PCA plots, echo=FALSE}
 #make the PCA plot with strains as points NEED TO DO PCA OF SEPERATE SETS OF GENES 
 #png("PCA Plot of Carotenoid BLAST Hit .png", width=1000, height=1000)
 ggbiplot(pca_phmmer_IPP,ellipse=TRUE,obs.scale = 3,var.scale = 1, groups=habitat) +
@@ -47,9 +43,9 @@ ggbiplot(pca_phmmer_IPP,ellipse=TRUE,obs.scale = 3,var.scale = 1, groups=habitat
 
 #make the PCA plot with strain names (looks too messy with all names...)
 #png("PCA Plot of Carotenoid BLAST Hit .png", width=1000, height=1000)
-ggbiplot(pca_percent,labels= rownames(percent),ellipse=FALSE,obs.scale = 3,var.scale = 1, groups=habitat) +
+ggbiplot(pca_phmmer_IPP,labels= rownames(phmmer_IPP),ellipse=FALSE,obs.scale = 3,var.scale = 1, groups=habitat) +
   scale_colour_manual(name="Habitat", values= c("saddlebrown", "darkorange1", "cornflowerblue", "deeppink", "red", "dark blue", "forest green", "gold", "darkmagenta", "black"))+
-  ggtitle("PCA of BLASTp Percent Identities")+
+  ggtitle("PCA of pHMMer IPP Enzymes")+
   theme_minimal()+
   theme(legend.position = "bottom")
 ```
@@ -186,28 +182,8 @@ permutest(bd_phmmer_IPP)
 #habitat data is not statistically significant. 
                 
 #simper test: determine which genes are responsible for the difference between 2 compared habiatat groups 
-simp_pHMMER_IPP= simper(pHMMER_matrix, group= pHMMER$Habitat)
-summary(simp_pHMMER)
+simp_phmmer_IPP= simper(phmmer_IPP_matrix, group= pHMMER$Habitat)
+summary(simp_phmmer_IPP)
                 
 #Results of simper test
 ```
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

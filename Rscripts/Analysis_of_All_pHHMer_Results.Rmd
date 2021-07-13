@@ -5,10 +5,16 @@ output: pdf_document
 
 #################### PREFACE ##########################
 #Code for PCA, NMDS, and PERMANOVA/ simper test 
-#of pHMMer results. ALL ENZYMES TEST RUN 
-#carotenoid biosynthesis enzymes:
-#Can percent idenitities give us an insight on 
-#disimilarities in the pathway between habitats?  
+#of pHMMer results.Carotenoid biosynthesis enzymes:
+#crtE, crtBa, crtBb, crtIa, crtIb, cruA, cruP, crtL, 
+#crtRa, crtRb, crtG, crtX, crtW, crtOa, crtN,crtP, 
+#crtQa, crtQb, cruF, crtM. 
+#RESULTS: NMDS and PCA show no distinct trends, but
+#statistics support differences in gene content based 
+#off of habitat: 
+#"saltwater"  "symbiont"   "freshwater" "cave"
+#"desert"     "tropical"   "soil"       "rock"      
+#"hot spring" "temperate"
 #######################################################
 
 ```{r setup, include=FALSE}
@@ -19,9 +25,7 @@ library(devtools)
 library(ggbiplot)
 library(readr)
 pHMMER <- read_csv("/bigdata/stajichlab/shared/projects/Cyanobacteria/Terresterial_Cyano/Cyano Carotenoids pHMMER Results - phmmer (1).csv")
-#organize data to just raw hits and strain names 
-#row.names(pHMMER) = pHMMER$Strain
-#pHMMER_matrix <- data.matrix(pHMMER[c(3:31)])
+row.names(pHMMER) = pHMMER$Strain
 pHMMER_matrix <- subset(pHMMER, select=c(crtE, crtBa, crtBb, crtIa, crtIb, cruA, cruP, crtL, crtRa, crtRb, crtG, crtX, crtW, crtOa, crtN,crtP, crtQa, crtQb, cruF, crtM),row.names=1)
 range(pHMMER_matrix^0.5) #0 23
 
@@ -32,32 +36,29 @@ str(pca_pHMMER)
 #crtE-0.45 crtBa-0.26 crtBb-0.09 crtIa-0.07
 #crtIb-0.04 cruA-0.03 cruP-0.01 crtL-0.006
 
-
 #make groups based on habitat
 habitat= pHMMER$Habitat
+```
 
-
-#try to make group colours, this should be added to plot code 
-scale_colour_manual(name= "Habitat", values= c("brown", "dark orange", "blue", "pink", "red", "dark blue", "forest green", "dark yellow", "red", "black"))
-
-#make the PCA plot with strains as points NEED TO DO PCA OF SEPERATE SETS OF GENES 
+```{r PCA Plot, echo=FALSE}
+#make the PCA plot with strains as points 
 #png("PCA Plot of Carotenoid BLAST Hit .png", width=1000, height=1000)
 ggbiplot(pca_pHMMER,ellipse=TRUE,obs.scale = 3,var.scale = 1, groups=habitat) +
   scale_colour_manual(name="Habitat", values= c("saddlebrown", "darkorange1", "cornflowerblue", "deeppink", "red", "dark blue", "forest green", "gold", "darkmagenta", "black"))+
-  ggtitle("PCA of pHMMer Results")+
+  ggtitle("PCA of AllpHMMer Results")+
   theme_minimal()+
   theme(legend.position = "bottom")
 
 #make the PCA plot with strain names (looks too messy with all names...)
 #png("PCA Plot of Carotenoid BLAST Hit .png", width=1000, height=1000)
-ggbiplot(pca_percent,labels= rownames(percent),ellipse=FALSE,obs.scale = 3,var.scale = 1, groups=habitat) +
+ggbiplot(pca_pHMMER,labels= rownames(pHMMER),ellipse=FALSE,obs.scale = 3,var.scale = 1, groups=habitat) +
   scale_colour_manual(name="Habitat", values= c("saddlebrown", "darkorange1", "cornflowerblue", "deeppink", "red", "dark blue", "forest green", "gold", "darkmagenta", "black"))+
-  ggtitle("PCA of BLASTp Percent Identities")+
+  ggtitle("PCA of AllpHMMer Results")+
   theme_minimal()+
   theme(legend.position = "bottom")
 ```
 
-```{r setup, include=FALSE}
+```{r NMDS, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 #load packages 
 library(vegan)
@@ -69,7 +70,7 @@ pHMMER <- read_csv("/bigdata/stajichlab/shared/projects/Cyanobacteria/Terresteri
 pHMMER_matrix <- subset(pHMMER, select=c(crtE, crtBa, crtBb, crtIa, crtIb, cruA, cruP, crtL, crtRa, crtRb, crtG, crtX, crtW, crtOa, crtN,crtP, crtQa, crtQb, cruF, crtM),row.names=1)
 nmds_pHMMER_habitat= as.data.frame(pHMMER[,1:2])
 #Do you need to transform your data? range should be 0-10 if not, use root function
-range(pHMMER_matrix^0.5) # 0-23
+range(pHMMER_matrix^0.5) # 0-4.79
 
 #make a distance matrix
 pHMMER_matrix_ds=vegdist(pHMMER_matrix^0.5, method = 'euclidian')
@@ -95,12 +96,11 @@ cols[nmds_pHMMER_habitat$Habitat == c("tropical")] <- "black"
 cols[nmds_pHMMER_habitat$Habitat == c("temperate")] <- "darkmagenta"
 cols[nmds_pHMMER_habitat$Habitat == c("symbiont")] <- "gold"
 cols[nmds_pHMMER_habitat$Habitat == c("rock")] <- "red"
-pairs(character(nrow(nmds_pHMMER_habitat$Strain, col=cols)
-                
-#habitatvec = factor(small$Habitat, levels = c("freshwater", "saltwater", "hot spring", "soil", "cave", "desert", "tropical", "temperate", "symbiont", "rock"))
-#colors <- c("cornflowerblue", "dark blue", "deeppink", "forest green", "saddlebrown", "darkorange1", "black", "darkmagenta", "gold", "red")
+pairs(character(nrow(nmds_pHMMER_habitat$Strain, col=cols)))
 habitatinfo= c(rep(pHMMER$Habitat))
-                
+```
+
+```{r NMDS Plot, echo=FALSE}
 #NMDS Plot With Species Names 
 ordiplot(pHMMER_nms, type="n")
 orditorp(pHMMER_nms,display="sites",labels=pHMMER$Strain, col=cols ,air=0.00025)
@@ -109,7 +109,7 @@ par(xpd=TRUE)
 #change coordinates of the legend for each specific graph
 #legend(-0.4,-0.2, "stress = 0.13") 
 #change coordinates and stress value for each specific graph
-title(main="NMDS of pHMMer Results")
+title(main="NMDS of All pHMMer Results")
 scores <-
   scores(pHMMER_nms, display = "sites", "species")
 cent <-
@@ -117,7 +117,7 @@ cent <-
 names(cent) [-1] <- colnames(scores)
 points(cent [,-1],
 pch = c( 8 , 8 , 8, 8),
-col = unique(colors),
+col = unique(cols),
 bg = c("black"),
 lwd = 3.0,
 cex = 2.0
@@ -129,7 +129,7 @@ points(pHMMER_nms,display= "sites",pch=21, bg=cols)
 par(xpd=TRUE)
 #legend(0.6,0.25,legend =habitatvec, fill=colvec, border= "black")
 #legend(-0.4,-0.2, "stress = 0.13") 
- title(main="NMDS of Raw BLASTp")
+ title(main="NMDS of All pHMMer Results")
 scores <-
   scores(pHMMER_nms, display = "sites", "species")
 cent <-
@@ -137,12 +137,11 @@ cent <-
 names(cent) [-1] <- colnames(scores)
 points(cent [,-1],
   pch = c( 8 , 8 , 8, 8),
-  col = unique(colors),
+  col = unique(cols),
   bg = c("black"),
   lwd = 3.0,
   cex = 2.0
 )
- 
 ```
 
 ```{r setup, include=FALSE}
@@ -193,23 +192,3 @@ permutest(bd_pHMMER)
 simp_pHMMER= simper(pHMMER_matrix, group= pHMMER$Habitat)
 summary(simp_pHMMER)
 ```
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

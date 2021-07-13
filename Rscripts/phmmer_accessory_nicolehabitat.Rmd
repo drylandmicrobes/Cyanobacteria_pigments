@@ -1,0 +1,182 @@
+---
+title: "p_accessory"
+output: pdf_document
+---
+
+#################### PREFACE ##########################
+#Code for PCA, NMDS, and PERMANOVA/ simper test 
+#of raw pHMMer hits of accessory carotenoid 
+#biosynthesis enzymes: crtRa, crtRb, crtG, crtX, 
+#crtW, crtOa, crtN,crtP, crtQa, crtQb,
+#cruF, and crtM. Both crtOb and crtZ have lots of 0's in
+#their columns and can not be used when performing PCA. 
+#These enzymes are create accessory carotenoid pigments 
+#that could be important for photoprotection. 
+#######################################################
+
+```{r PCA}
+#load packages and blastp raw hits data 
+library(devtools)
+library(ggbiplot)
+library(readr)
+p_accessory <- read_csv("Nicole's Habitat Data Sets - p_accessory.csv")
+p_accessory_matrix = subset(p_accessory, select=c(crtRa, crtRb, crtG, crtX, crtW, crtOa, crtN,crtP, crtQa, crtQb, cruF, crtM),row.names=1)
+row.names(p_accessory)=p_accessory$Strain
+pca_p_accessory= prcomp(p_accessory_matrix, center= TRUE, scale.= TRUE)
+
+#analyze pca statistics to find proportion of variatiance explained by each gene 
+summary(pca_p_accessory)
+str(pca_p_accessory)
+
+#make groups based on habitat
+habitat= p_accessory$Habitat
+
+```
+
+```{r PCA Plots, echo= FALSE}
+#make the PCA plot with strains as points 
+#png("PCA Plot of Carotenoid BLAST Hit .png", width=1000, height=1000)
+ggbiplot(pca_p_accessory,ellipse=FALSE,obs.scale = 3,var.scale = 1, groups=habitat) +
+  scale_colour_manual(name="Habitat", values= c("cornflowerblue", "forest green", "darkorange1", "saddlebrown"))+
+  ggtitle("PCA of pHMMer Accessory Enzymes -N")+
+  theme_minimal()+
+  theme(legend.position = "bottom")
+
+#make the PCA plot with strain names (looks too messy with all names...)
+#png("PCA Plot of Carotenoid BLAST Hit .png", width=1000, height=1000)
+ggbiplot(pca_p_accessory,labels= rownames(p_accessory),ellipse=FALSE,obs.scale = 3,var.scale = 1, groups=habitat) +
+  scale_colour_manual(name="Habitat", values= c("cornflowerblue", "forest green", "darkorange1", "saddlebrown"))+
+  ggtitle("PCA of pHMMer Accessory Enzymes -N")+
+  theme_minimal()+
+  theme(legend.position = "bottom")
+
+```
+
+```{R NMDS}
+#load packages 
+library(vegan)
+library(ggplot2)
+library(readr)
+
+#prep data
+p_accessory <- read_csv("Nicole's Habitat Data Sets - p_accessory.csv")
+p_accessory_matrix = subset(p_accessory, select=c(crtRa, crtRb, crtG, crtX, crtW, crtOa, crtN,crtP, crtQa, crtQb, cruF, crtM),row.names=1)
+nmds_p_accessory_habitat= as.data.frame(p_accessory[,1:2])
+#Do you need to transform your data? range should be 0-10 if not, use root function
+range((p_accessory_matrix)^0.5) # 0-11 should be 0-10 but lets see if the data looks fine 
+
+#make a distance matrix
+p_accessory_matrix_ds=vegdist((p_accessory_matrix), method = 'euclidian')
+
+#Run metaMDS on distance matrix
+p_accessory_nms=metaMDS(p_accessory_matrix_ds, distance="euclidian",k=2,trymax=500)
+p_accessory_nms
+#stress=0.08
+
+#assign colors to habitat
+cols <- nmds_p_accessory_habitat$Strain
+cols[] <- c("cornflowerblue", "forest green", "darkorange1", "saddlebrown")
+#Warning message:
+#number of items to replace is not a multiple of replacement length
+
+cols[nmds_p_accessory_habitat$Habitat == c("aqutic")] <- "cornflowerblue"
+cols[nmds_p_accessory_habitat$Habitat == c("hydroterrestrial")] <- "forest green"
+cols[nmds_accessory_habitat$Habitat == c("soil")] <- "darkorange1"
+cols[nmds_accessory_habitat$Habitat == c("subaerial")] <- "saddlebrown"
+cols[nmds_accessory_habitat$Habitat == c("NA")] <- "grey"
+pairs(character(nrow(nmds_p_accessory_habitat$Strain, col=cols)))
+              
+habitatinfo= c(rep(p_accessory$Habitat))
+```
+
+```{r NMDS Plots, echo= FALSE}
+#NMDS Plot With Species Names 
+ordiplot(p_accessory_nms, type="n")
+orditorp(p_accessory_nms,display="sites",labels=p_accessory$Strain, col=cols ,air=0.00025)
+par(xpd=TRUE)
+#legend(0.6,0.25,legend =unique(nmds_small_habitat$Strain), fill=cols, border= "black")
+#change coordinates of the legend for each specific graph
+#legend(-0.4,-0.2, "stress = 0.13") 
+#change coordinates and stress value for each specific graph
+title(main="NMDS of pHMMer Accssory Enzymes -N")
+scores <-
+  scores(p_accessory_nms, display = "sites", "species")
+cent <-
+  aggregate(scores ~ habitatinfo, data = nmds_p_accessory_habitat, FUN = "mean")
+names(cent) [-1] <- colnames(scores)
+      points(cent [,-1],
+      pch = c( 8 , 8 , 8, 8),
+      col = unique(cols),
+      bg = c("black"),
+      lwd = 3.0,
+      cex = 2.0
+)
+                
+#NMDS Plot with Points
+ordiplot(p_accessory_nms, choices= c(1,2))
+points(p_accessory_nms,display= "sites",pch=21, bg=cols) 
+par(xpd=TRUE)
+#legend(0.6,0.25,legend =habitat, fill=cols, border= "black")
+#legend(-0.4,-0.2, "stress = 0.101") 
+title(main="NMDS of pHMMer Accssory Enzymes -N")
+scores <-
+  scores(p_accessory_nms, display = "sites", "species")
+cent <-
+  aggregate(scores ~ habitatinfo, data = nmds_p_accessory_habitat, FUN = "mean")
+names(cent) [-1] <- colnames(scores)
+points(cent [,-1],
+      pch = c( 8 , 8 , 8, 8),
+      col = unique(cols),
+      bg = c("black"),
+      lwd = 3.0,
+      cex = 2.0
+)
+```
+                
+```{R Stats}
+
+#data prepartion 
+rownames(p_accessory_matrix) = p_accessory$Strain
+str(p_accessory_matrix)
+nmds_p_accessory_habitat= as.data.frame(p_accessory[,1:2])
+str(nmds_p_accessory_habitat)
+
+#make a distance matrix
+p_accessory_matrix_ds=vegdist(p_accessory_matrix, method = 'euclidian')
+
+#Run metaMDS on distance matrix
+p_accessory_nms=metaMDS(p_accessory_matrix_ds, distance="euclidian",k=2,trymax=500)
+#stress=0.089
+
+#Run PERMANOVA
+pmv_p_accessory = adonis(p_accessory_matrix ~ habitat, data = nmds_p_accessory_habitat, permutations = 999, method = 'bray')
+pmv_p_accessory
+#PERMANOVA Results: Based off of the carotenoid genes being compared
+#cyanobacterial strains differ statistically significant 
+#between their habitats (p-value:).
+#Habitats explian % of the variance in the copy numbers of critical 
+#carotenoid biosynthesis enzymes between cyanobacterial species. 
+
+
+#Visualise the permanova
+densityplot(permustats(pmv_accessory))
+
+#Distance Based Dispersion test 
+bd_p_accessory = betadisper(p_accessory_matrix_ds, p_accessory$Habitat)
+boxplot(bd_p_accessory)
+anova(bd_p_accessory) 
+#F-Test: pvalue 0.53
+permutest(bd_p_accessory)
+#permutation test: pvalue 0.55
+
+#both the F-Test and permutation test show that 
+#the avergae distance to the median for the 
+#habitat data is not statistically significant. 
+
+#simper test: determine which genes are responsible for the difference between 2 compared habiatat groups 
+simp_p_accessory= simper(p_accessory_matrix, group= p_accessory$Habitat)
+summary(simp_p_accessory)
+#Results of simper test
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```

@@ -101,12 +101,12 @@ cols[nmds_percent_habitat$Habitat == c("tropical")] <- "black"
 cols[nmds_percent_habitat$Habitat == c("temperate")] <- "darkmagenta"
 cols[nmds_percent_habitat$Habitat == c("symbiont")] <- "gold"
 cols[nmds_percent_habitat$Habitat == c("rock")] <- "red"
-pairs(character(nrow(nmds_percent_habitat$Strain, col=cols)
-                
-#habitatvec = factor(small$Habitat, levels = c("freshwater", "saltwater", "hot spring", "soil", "cave", "desert", "tropical", "temperate", "symbiont", "rock"))
-#colors <- c("cornflowerblue", "dark blue", "deeppink", "forest green", "saddlebrown", "darkorange1", "black", "darkmagenta", "gold", "red")
+pairs(character(nrow(nmds_percent_habitat$Strain, col=cols)))
+            
 habitatinfo= c(rep(percent$Habitat))
-                
+```
+
+```{r NMDS plots, echo =FALSE}
 #NMDS Plot With Species Names 
 ordiplot(percent_nms, type="n")
 orditorp(percent_nms,display="sites",labels=percent$Strain, col=cols ,air=0.00025)
@@ -150,7 +150,7 @@ cex = 2.0
 )
 ```
 
-```{r setup, include=FALSE}
+```{r stats, include=FALSE}
 #data prepartion 
 rownames(percent_matrix) = percent$Strain
 str(percent_matrix)
@@ -196,22 +196,3 @@ permutest(bd_percent)
 simp_percent= simper(percent_matrix^0.5, group= percent$Habitat)
 summary(simp_percent)
 ```
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

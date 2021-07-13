@@ -1,0 +1,182 @@
+---
+title: "p_critical"
+output: pdf_document
+---
+
+#################### PREFACE ##########################
+#Code for PCA, NMDS, and PERMANOVA/ simper test 
+#of raw pHMMer hits of citical carotenoid 
+#biosynthesis enzymes: crtE, crtBa, crtBb, crtIa, crtIb, crtL, cruA, cruP
+#cruF, and crtM. Both crtOb and crtZ have lots of 0's in
+#their columns and can not be used when performing PCA. 
+#These enzymes are create accessory carotenoid pigments 
+#that could be important for photoprotection. 
+#######################################################
+
+```{r PCA}
+#load packages and blastp raw hits data 
+library(devtools)
+library(ggbiplot)
+library(readr)
+p_critical <- read_csv("Nicole's Habitat Data Sets - p_critical.csv")
+p_critical_matrix =data.matrix(p_critical[c(3:10)])
+row.names(p_critical)=p_critical$Strain
+pca_p_critical= prcomp(p_critical_matrix, center= TRUE, scale.= TRUE)
+
+#analyze pca statistics to find proportion of variatiance explained by each gene 
+summary(pca_p_critical)
+str(pca_p_critical)
+
+#make groups based on habitat
+habitat= p_critical$Habitat
+
+```
+
+```{r PCA Plots, echo= FALSE}
+#make the PCA plot with strains as points 
+#png("PCA Plot of Carotenoid BLAST Hit .png", width=1000, height=1000)
+ggbiplot(pca_p_critical,ellipse=FALSE,obs.scale = 3,var.scale = 1, groups=habitat) +
+  scale_colour_manual(name="Habitat", values= c("cornflowerblue", "forest green", "darkorange1", "saddlebrown"))+
+  ggtitle("PCA of pHMMer Critical Enzymes -N")+
+  theme_minimal()+
+  theme(legend.position = "bottom")
+
+#make the PCA plot with strain names (looks too messy with all names...)
+#png("PCA Plot of Carotenoid BLAST Hit .png", width=1000, height=1000)
+ggbiplot(pca_p_critical,labels= rownames(p_critical),ellipse=FALSE,obs.scale = 3,var.scale = 1, groups=habitat) +
+  scale_colour_manual(name="Habitat", values= c("cornflowerblue", "forest green", "darkorange1", "saddlebrown"))+
+  ggtitle("PCA of pHMMer Critical Enzymes -N")+
+  theme_minimal()+
+  theme(legend.position = "bottom")
+
+```
+
+```{R NMDS}
+#load packages 
+library(vegan)
+library(ggplot2)
+library(readr)
+
+#prep data
+p_critical <- read_csv("Nicole's Habitat Data Sets - p_critical.csv")
+p_critical_matrix =data.matrix(p_critical[c(3:10)])
+nmds_p_critical_habitat= as.data.frame(p_critical[,1:2])
+row.names(p_critical)=p_critical$Strain
+#Do you need to transform your data? range should be 0-10 if not, use root function
+range((p_critical_matrix)) # 0-12 should be 0-10 but lets see if the data looks fine 
+
+#make a distance matrix
+p_critical_matrix_ds=vegdist((p_critical_matrix), method = 'euclidian')
+
+#Run metaMDS on distance matrix
+p_critical_nms=metaMDS(p_critical_matrix_ds, distance="euclidian",k=2,trymax=500)
+p_critical_nms
+#stress=0.09
+
+#assign colors to habitat
+cols <- nmds_p_critical_habitat$Strain
+cols[] <- c("cornflowerblue", "forest green", "darkorange1", "saddlebrown")
+#Warning message:
+#number of items to replace is not a multiple of replacement length
+
+cols[nmds_p_critical_habitat$Habitat == c("aqutic")] <- "cornflowerblue"
+cols[nmds_p_critical_habitat$Habitat == c("hydroterrestrial")] <- "forest green"
+cols[nmds_critical_habitat$Habitat == c("soil")] <- "darkorange1"
+cols[nmds_critical_habitat$Habitat == c("subaerial")] <- "saddlebrown"
+cols[nmds_critical_habitat$Habitat == c("NA")] <- "grey"
+pairs(character(nrow(nmds_p_critical_habitat$Strain, col=cols)))
+              
+habitatinfo= c(rep(p_critical$Habitat))
+```
+
+```{r NMDS Plots, echo= FALSE}
+#NMDS Plot With Species Names 
+ordiplot(p_critical_nms, type="n")
+orditorp(p_critical_nms,display="sites",labels=p_critical$Strain, col=cols ,air=0.00025)
+par(xpd=TRUE)
+#legend(0.6,0.25,legend =unique(nmds_small_habitat$Strain), fill=cols, border= "black")
+#change coordinates of the legend for each specific graph
+#legend(-0.4,-0.2, "stress = 0.13") 
+#change coordinates and stress value for each specific graph
+title(main="NMDS of pHMMer critical Enzymes -N")
+scores <-
+  scores(p_critical_nms, display = "sites", "species")
+cent <-
+  aggregate(scores ~ habitatinfo, data = nmds_p_critical_habitat, FUN = "mean")
+names(cent) [-1] <- colnames(scores)
+      points(cent [,-1],
+      pch = c( 8 , 8 , 8, 8),
+      col = unique(cols),
+      bg = c("black"),
+      lwd = 3.0,
+      cex = 2.0
+)
+                
+#NMDS Plot with Points
+ordiplot(p_critical_nms, choices= c(1,2))
+points(p_critical_nms,display= "sites",pch=21, bg=cols) 
+par(xpd=TRUE)
+#legend(0.6,0.25,legend =habitat, fill=cols, border= "black")
+#legend(-0.4,-0.2, "stress = 0.101") 
+title(main="NMDS of pHMMer critical Enzymes -N")
+scores <-
+  scores(p_critical_nms, display = "sites", "species")
+cent <-
+  aggregate(scores ~ habitatinfo, data = nmds_p_critical_habitat, FUN = "mean")
+names(cent) [-1] <- colnames(scores)
+points(cent [,-1],
+      pch = c( 8 , 8 , 8, 8),
+      col = unique(cols),
+      bg = c("black"),
+      lwd = 3.0,
+      cex = 2.0
+)
+```
+                
+```{R Stats}
+
+#data prepartion 
+rownames(p_critical_matrix) = p_critical$Strain
+str(p_critical_matrix)
+nmds_p_critical_habitat= as.data.frame(p_critical[,1:2])
+str(nmds_p_critical_habitat)
+
+#make a distance matrix
+p_critical_matrix_ds=vegdist(p_critical_matrix, method = 'euclidian')
+
+#Run metaMDS on distance matrix
+p_critical_nms=metaMDS(p_critical_matrix_ds, distance="euclidian",k=2,trymax=500)
+#stress=0.089
+
+#Run PERMANOVA
+pmv_p_critical = adonis(p_critical_matrix ~ habitat, data = nmds_p_critical_habitat, permutations = 999, method = 'bray')
+pmv_p_critical
+#PERMANOVA Results: Based off of the carotenoid genes being compared
+#cyanobacterial strains differ statistically significant 
+#between their habitats (p-value:).
+#Habitats explian % of the variance in the copy numbers of critical 
+#carotenoid biosynthesis enzymes between cyanobacterial species. 
+
+
+#Visualise the permanova
+densityplot(permustats(pmv_critical))
+
+#Distance Based Dispersion test 
+bd_p_critical = betadisper(p_critical_matrix_ds, p_critical$Habitat)
+boxplot(bd_p_critical)
+anova(bd_p_critical) 
+#F-Test: pvalue 0.53
+permutest(bd_p_critical)
+#permutation test: pvalue 0.55
+
+#both the F-Test and permutation test show that 
+#the avergae distance to the median for the 
+#habitat data is not statistically significant. 
+
+#simper test: determine which genes are responsible for the difference between 2 compared habiatat groups 
+simp_p_critical= simper(p_critical_matrix, group= p_critical$Habitat)
+summary(simp_p_critical)
+#Results of simper test
+```
+knitr::opts_chunk$set(echo = TRUE)
+```
